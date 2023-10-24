@@ -493,7 +493,7 @@ Partial Class Form1
         ' 
         ' Panel125
         ' 
-        Panel125.BackColor = Color.White
+        Panel125.BackColor = Color.DarkCyan
         Panel125.Location = New Point(457, 79)
         Panel125.Name = "Panel125"
         Panel125.Size = New Size(66, 21)
@@ -504,7 +504,7 @@ Partial Class Form1
         Txt_E_Oxidacion.Enabled = False
         Txt_E_Oxidacion.Location = New Point(547, 40)
         Txt_E_Oxidacion.Name = "Txt_E_Oxidacion"
-        Txt_E_Oxidacion.Size = New Size(100, 23)
+        Txt_E_Oxidacion.Size = New Size(173, 23)
         Txt_E_Oxidacion.TabIndex = 25
         ' 
         ' Txt_M_Atomica
@@ -520,7 +520,7 @@ Partial Class Form1
         Txt_N_Atomico.Enabled = False
         Txt_N_Atomico.Location = New Point(547, 11)
         Txt_N_Atomico.Name = "Txt_N_Atomico"
-        Txt_N_Atomico.Size = New Size(100, 23)
+        Txt_N_Atomico.Size = New Size(173, 23)
         Txt_N_Atomico.TabIndex = 23
         ' 
         ' Txt_Nombre
@@ -1464,7 +1464,7 @@ Partial Class Form1
         ' 
         ' Panel38
         ' 
-        Panel38.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
+        Panel38.BackColor = Color.Pink
         Panel38.Controls.Add(Label47)
         Panel38.Location = New Point(604, 415)
         Panel38.Name = "Panel38"
@@ -1475,7 +1475,7 @@ Partial Class Form1
         ' 
         Label47.AutoSize = True
         Label47.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label47.ForeColor = Color.Snow
+        Label47.ForeColor = Color.Black
         Label47.Location = New Point(18, 9)
         Label47.Name = "Label47"
         Label47.Size = New Size(40, 31)
