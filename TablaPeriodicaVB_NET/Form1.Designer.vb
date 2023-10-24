@@ -23,6 +23,20 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Label138 = New Label()
+        Panel126 = New Panel()
+        Label137 = New Label()
+        Panel125 = New Panel()
+        Txt_E_Oxidacion = New TextBox()
+        Txt_M_Atomica = New TextBox()
+        Txt_N_Atomico = New TextBox()
+        Txt_Nombre = New TextBox()
+        Label130 = New Label()
+        Label129 = New Label()
+        Label128 = New Label()
+        Label127 = New Label()
+        Pnl_ElementoSelect = New Panel()
+        Lbl_ElementoSelect = New Label()
         Label9 = New Label()
         Label1 = New Label()
         M_Transicion = New Panel()
@@ -40,20 +54,20 @@ Partial Class Form1
         Label5 = New Label()
         M_Metaloides = New Panel()
         Label10 = New Label()
-        Panel2 = New Panel()
-        Label11 = New Label()
-        Panel3 = New Panel()
-        Label12 = New Label()
-        Panel4 = New Panel()
-        Label13 = New Label()
-        Panel5 = New Panel()
-        Label14 = New Label()
-        Panel6 = New Panel()
-        Label15 = New Label()
-        Panel7 = New Panel()
-        Label16 = New Label()
-        Panel8 = New Panel()
-        Label17 = New Label()
+        Pnl_H = New Panel()
+        Lbl_H = New Label()
+        Pnl_Li = New Panel()
+        Lbl_Li = New Label()
+        Pnl_Na = New Panel()
+        Lbl_Na = New Label()
+        Pnl_K = New Panel()
+        Lbl_K = New Label()
+        Pnl_Rb = New Panel()
+        Lbl_Rb = New Label()
+        Pnl_Cs = New Panel()
+        Lbl_Cs = New Label()
+        Pnl_Fr = New Panel()
+        Lbl_Fr = New Label()
         Panel9 = New Panel()
         Label18 = New Label()
         Panel10 = New Panel()
@@ -272,14 +286,27 @@ Partial Class Form1
         Label124 = New Label()
         Panel117 = New Panel()
         Label125 = New Label()
+        Panel119 = New Panel()
+        Label131 = New Label()
+        Panel120 = New Panel()
+        Label132 = New Label()
+        Panel121 = New Panel()
+        Label133 = New Label()
+        Panel122 = New Panel()
+        Label134 = New Label()
+        Panel123 = New Panel()
+        Label135 = New Label()
+        Panel124 = New Panel()
+        Label136 = New Label()
         Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
-        Panel3.SuspendLayout()
-        Panel4.SuspendLayout()
-        Panel5.SuspendLayout()
-        Panel6.SuspendLayout()
-        Panel7.SuspendLayout()
-        Panel8.SuspendLayout()
+        Pnl_ElementoSelect.SuspendLayout()
+        Pnl_H.SuspendLayout()
+        Pnl_Li.SuspendLayout()
+        Pnl_Na.SuspendLayout()
+        Pnl_K.SuspendLayout()
+        Pnl_Rb.SuspendLayout()
+        Pnl_Cs.SuspendLayout()
+        Pnl_Fr.SuspendLayout()
         Panel9.SuspendLayout()
         Panel10.SuspendLayout()
         Panel11.SuspendLayout()
@@ -389,11 +416,30 @@ Partial Class Form1
         Panel115.SuspendLayout()
         Panel116.SuspendLayout()
         Panel117.SuspendLayout()
+        Panel119.SuspendLayout()
+        Panel120.SuspendLayout()
+        Panel121.SuspendLayout()
+        Panel122.SuspendLayout()
+        Panel123.SuspendLayout()
+        Panel124.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(37), CByte(37), CByte(37))
+        Panel1.Controls.Add(Label138)
+        Panel1.Controls.Add(Panel126)
+        Panel1.Controls.Add(Label137)
+        Panel1.Controls.Add(Panel125)
+        Panel1.Controls.Add(Txt_E_Oxidacion)
+        Panel1.Controls.Add(Txt_M_Atomica)
+        Panel1.Controls.Add(Txt_N_Atomico)
+        Panel1.Controls.Add(Txt_Nombre)
+        Panel1.Controls.Add(Label130)
+        Panel1.Controls.Add(Label129)
+        Panel1.Controls.Add(Label128)
+        Panel1.Controls.Add(Label127)
+        Panel1.Controls.Add(Pnl_ElementoSelect)
         Panel1.Controls.Add(Label9)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(M_Transicion)
@@ -412,15 +458,148 @@ Partial Class Form1
         Panel1.Controls.Add(M_Metaloides)
         Panel1.Location = New Point(160, 60)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(660, 193)
+        Panel1.Size = New Size(737, 193)
         Panel1.TabIndex = 0
+        ' 
+        ' Label138
+        ' 
+        Label138.AutoSize = True
+        Label138.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label138.ForeColor = Color.White
+        Label138.Location = New Point(76, 130)
+        Label138.Name = "Label138"
+        Label138.Size = New Size(41, 24)
+        Label138.TabIndex = 29
+        Label138.Text = "N/A"
+        ' 
+        ' Panel126
+        ' 
+        Panel126.BackColor = Color.Pink
+        Panel126.Location = New Point(5, 133)
+        Panel126.Name = "Panel126"
+        Panel126.Size = New Size(66, 21)
+        Panel126.TabIndex = 28
+        ' 
+        ' Label137
+        ' 
+        Label137.AutoSize = True
+        Label137.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label137.ForeColor = Color.White
+        Label137.Location = New Point(529, 79)
+        Label137.Name = "Label137"
+        Label137.Size = New Size(167, 24)
+        Label137.TabIndex = 27
+        Label137.Text = "Metales del bloque p"
+        ' 
+        ' Panel125
+        ' 
+        Panel125.BackColor = Color.White
+        Panel125.Location = New Point(457, 79)
+        Panel125.Name = "Panel125"
+        Panel125.Size = New Size(66, 21)
+        Panel125.TabIndex = 26
+        ' 
+        ' Txt_E_Oxidacion
+        ' 
+        Txt_E_Oxidacion.Enabled = False
+        Txt_E_Oxidacion.Location = New Point(547, 40)
+        Txt_E_Oxidacion.Name = "Txt_E_Oxidacion"
+        Txt_E_Oxidacion.Size = New Size(100, 23)
+        Txt_E_Oxidacion.TabIndex = 25
+        ' 
+        ' Txt_M_Atomica
+        ' 
+        Txt_M_Atomica.Enabled = False
+        Txt_M_Atomica.Location = New Point(249, 41)
+        Txt_M_Atomica.Name = "Txt_M_Atomica"
+        Txt_M_Atomica.Size = New Size(100, 23)
+        Txt_M_Atomica.TabIndex = 24
+        ' 
+        ' Txt_N_Atomico
+        ' 
+        Txt_N_Atomico.Enabled = False
+        Txt_N_Atomico.Location = New Point(547, 11)
+        Txt_N_Atomico.Name = "Txt_N_Atomico"
+        Txt_N_Atomico.Size = New Size(100, 23)
+        Txt_N_Atomico.TabIndex = 23
+        ' 
+        ' Txt_Nombre
+        ' 
+        Txt_Nombre.Enabled = False
+        Txt_Nombre.Location = New Point(249, 7)
+        Txt_Nombre.Name = "Txt_Nombre"
+        Txt_Nombre.Size = New Size(100, 23)
+        Txt_Nombre.TabIndex = 22
+        ' 
+        ' Label130
+        ' 
+        Label130.AutoSize = True
+        Label130.Font = New Font("Quicksand", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label130.ForeColor = SystemColors.Control
+        Label130.Location = New Point(146, 41)
+        Label130.Name = "Label130"
+        Label130.Size = New Size(97, 19)
+        Label130.TabIndex = 21
+        Label130.Text = "Masa Atómica"
+        ' 
+        ' Label129
+        ' 
+        Label129.AutoSize = True
+        Label129.Font = New Font("Quicksand", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label129.ForeColor = SystemColors.Control
+        Label129.Location = New Point(405, 40)
+        Label129.Name = "Label129"
+        Label129.Size = New Size(136, 19)
+        Label129.TabIndex = 20
+        Label129.Text = "Estado de Oxidación"
+        ' 
+        ' Label128
+        ' 
+        Label128.AutoSize = True
+        Label128.Font = New Font("Quicksand", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label128.ForeColor = SystemColors.Control
+        Label128.Location = New Point(405, 11)
+        Label128.Name = "Label128"
+        Label128.Size = New Size(116, 19)
+        Label128.TabIndex = 19
+        Label128.Text = "Número Atómico"
+        ' 
+        ' Label127
+        ' 
+        Label127.AutoSize = True
+        Label127.Font = New Font("Quicksand", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label127.ForeColor = SystemColors.Control
+        Label127.Location = New Point(146, 11)
+        Label127.Name = "Label127"
+        Label127.Size = New Size(61, 19)
+        Label127.TabIndex = 18
+        Label127.Text = "Nombre"
+        ' 
+        ' Pnl_ElementoSelect
+        ' 
+        Pnl_ElementoSelect.BackColor = Color.White
+        Pnl_ElementoSelect.Controls.Add(Lbl_ElementoSelect)
+        Pnl_ElementoSelect.Location = New Point(5, 6)
+        Pnl_ElementoSelect.Name = "Pnl_ElementoSelect"
+        Pnl_ElementoSelect.Size = New Size(119, 66)
+        Pnl_ElementoSelect.TabIndex = 17
+        ' 
+        ' Lbl_ElementoSelect
+        ' 
+        Lbl_ElementoSelect.AutoSize = True
+        Lbl_ElementoSelect.Font = New Font("Quicksand", 24F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_ElementoSelect.Location = New Point(27, 6)
+        Lbl_ElementoSelect.Name = "Lbl_ElementoSelect"
+        Lbl_ElementoSelect.Size = New Size(60, 48)
+        Lbl_ElementoSelect.TabIndex = 0
+        Lbl_ElementoSelect.Text = "Be"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(215, 103)
+        Label9.Location = New Point(307, 103)
         Label9.Name = "Label9"
         Label9.Size = New Size(111, 24)
         Label9.TabIndex = 16
@@ -429,18 +608,18 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Quicksand", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(453, 76)
+        Label1.Location = New Point(77, 107)
         Label1.Name = "Label1"
-        Label1.Size = New Size(175, 24)
+        Label1.Size = New Size(145, 19)
         Label1.TabIndex = 1
         Label1.Text = "Metales de transición"
         ' 
         ' M_Transicion
         ' 
         M_Transicion.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
-        M_Transicion.Location = New Point(381, 79)
+        M_Transicion.Location = New Point(5, 106)
         M_Transicion.Name = "M_Transicion"
         M_Transicion.Size = New Size(66, 21)
         M_Transicion.TabIndex = 0
@@ -448,7 +627,7 @@ Partial Class Form1
         ' M_Gases_N
         ' 
         M_Gases_N.BackColor = Color.Purple
-        M_Gases_N.Location = New Point(143, 106)
+        M_Gases_N.Location = New Point(235, 106)
         M_Gases_N.Name = "M_Gases_N"
         M_Gases_N.Size = New Size(66, 21)
         M_Gases_N.TabIndex = 15
@@ -456,7 +635,7 @@ Partial Class Form1
         ' M_Alcalino
         ' 
         M_Alcalino.BackColor = Color.Lime
-        M_Alcalino.Location = New Point(143, 160)
+        M_Alcalino.Location = New Point(235, 160)
         M_Alcalino.Name = "M_Alcalino"
         M_Alcalino.Size = New Size(66, 21)
         M_Alcalino.TabIndex = 2
@@ -466,7 +645,7 @@ Partial Class Form1
         Label2.AutoSize = True
         Label2.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(217, 156)
+        Label2.Location = New Point(309, 156)
         Label2.Name = "Label2"
         Label2.Size = New Size(142, 24)
         Label2.TabIndex = 3
@@ -475,7 +654,7 @@ Partial Class Form1
         ' M_Alcalino_T
         ' 
         M_Alcalino_T.BackColor = Color.Yellow
-        M_Alcalino_T.Location = New Point(381, 106)
+        M_Alcalino_T.Location = New Point(457, 106)
         M_Alcalino_T.Name = "M_Alcalino_T"
         M_Alcalino_T.Size = New Size(66, 21)
         M_Alcalino_T.TabIndex = 4
@@ -485,7 +664,7 @@ Partial Class Form1
         Label7.AutoSize = True
         Label7.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(215, 76)
+        Label7.Location = New Point(77, 156)
         Label7.Name = "Label7"
         Label7.Size = New Size(120, 24)
         Label7.TabIndex = 13
@@ -496,7 +675,7 @@ Partial Class Form1
         Label3.AutoSize = True
         Label3.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(453, 103)
+        Label3.Location = New Point(529, 103)
         Label3.Name = "Label3"
         Label3.Size = New Size(191, 24)
         Label3.TabIndex = 5
@@ -505,7 +684,7 @@ Partial Class Form1
         ' M_Lantanidos
         ' 
         M_Lantanidos.BackColor = Color.Red
-        M_Lantanidos.Location = New Point(381, 133)
+        M_Lantanidos.Location = New Point(457, 133)
         M_Lantanidos.Name = "M_Lantanidos"
         M_Lantanidos.Size = New Size(66, 21)
         M_Lantanidos.TabIndex = 6
@@ -513,7 +692,7 @@ Partial Class Form1
         ' M_O_Metales
         ' 
         M_O_Metales.BackColor = Color.White
-        M_O_Metales.Location = New Point(143, 79)
+        M_O_Metales.Location = New Point(5, 160)
         M_O_Metales.Name = "M_O_Metales"
         M_O_Metales.Size = New Size(66, 21)
         M_O_Metales.TabIndex = 12
@@ -523,7 +702,7 @@ Partial Class Form1
         Label4.AutoSize = True
         Label4.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(452, 130)
+        Label4.Location = New Point(528, 130)
         Label4.Name = "Label4"
         Label4.Size = New Size(206, 24)
         Label4.TabIndex = 7
@@ -532,7 +711,7 @@ Partial Class Form1
         ' M_Actinidos
         ' 
         M_Actinidos.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
-        M_Actinidos.Location = New Point(381, 160)
+        M_Actinidos.Location = New Point(457, 160)
         M_Actinidos.Name = "M_Actinidos"
         M_Actinidos.Size = New Size(66, 21)
         M_Actinidos.TabIndex = 8
@@ -542,7 +721,7 @@ Partial Class Form1
         Label6.AutoSize = True
         Label6.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(215, 130)
+        Label6.Location = New Point(307, 130)
         Label6.Name = "Label6"
         Label6.Size = New Size(94, 24)
         Label6.TabIndex = 11
@@ -553,7 +732,7 @@ Partial Class Form1
         Label5.AutoSize = True
         Label5.Font = New Font("Quicksand", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(452, 157)
+        Label5.Location = New Point(528, 157)
         Label5.Name = "Label5"
         Label5.Size = New Size(194, 24)
         Label5.TabIndex = 9
@@ -562,7 +741,7 @@ Partial Class Form1
         ' M_Metaloides
         ' 
         M_Metaloides.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
-        M_Metaloides.Location = New Point(143, 133)
+        M_Metaloides.Location = New Point(235, 133)
         M_Metaloides.Name = "M_Metaloides"
         M_Metaloides.Size = New Size(66, 21)
         M_Metaloides.TabIndex = 10
@@ -578,142 +757,142 @@ Partial Class Form1
         Label10.TabIndex = 2
         Label10.Text = "TABLA PERIODICA"
         ' 
-        ' Panel2
+        ' Pnl_H
         ' 
-        Panel2.BackColor = Color.White
-        Panel2.Controls.Add(Label11)
-        Panel2.Location = New Point(12, 97)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(68, 46)
-        Panel2.TabIndex = 3
+        Pnl_H.BackColor = Color.White
+        Pnl_H.Controls.Add(Lbl_H)
+        Pnl_H.Location = New Point(12, 97)
+        Pnl_H.Name = "Pnl_H"
+        Pnl_H.Size = New Size(68, 46)
+        Pnl_H.TabIndex = 3
         ' 
-        ' Label11
+        ' Lbl_H
         ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(18, 9)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(29, 31)
-        Label11.TabIndex = 0
-        Label11.Text = "H"
+        Lbl_H.AutoSize = True
+        Lbl_H.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_H.Location = New Point(18, 9)
+        Lbl_H.Name = "Lbl_H"
+        Lbl_H.Size = New Size(29, 31)
+        Lbl_H.TabIndex = 0
+        Lbl_H.Text = "H"
         ' 
-        ' Panel3
+        ' Pnl_Li
         ' 
-        Panel3.BackColor = Color.White
-        Panel3.Controls.Add(Label12)
-        Panel3.Location = New Point(12, 151)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(68, 46)
-        Panel3.TabIndex = 4
+        Pnl_Li.BackColor = Color.Lime
+        Pnl_Li.Controls.Add(Lbl_Li)
+        Pnl_Li.Location = New Point(12, 151)
+        Pnl_Li.Name = "Pnl_Li"
+        Pnl_Li.Size = New Size(68, 46)
+        Pnl_Li.TabIndex = 4
         ' 
-        ' Label12
+        ' Lbl_Li
         ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(18, 9)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(31, 31)
-        Label12.TabIndex = 0
-        Label12.Text = "Li"
+        Lbl_Li.AutoSize = True
+        Lbl_Li.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_Li.Location = New Point(18, 9)
+        Lbl_Li.Name = "Lbl_Li"
+        Lbl_Li.Size = New Size(31, 31)
+        Lbl_Li.TabIndex = 0
+        Lbl_Li.Text = "Li"
         ' 
-        ' Panel4
+        ' Pnl_Na
         ' 
-        Panel4.BackColor = Color.White
-        Panel4.Controls.Add(Label13)
-        Panel4.Location = New Point(12, 205)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(68, 46)
-        Panel4.TabIndex = 5
+        Pnl_Na.BackColor = Color.Lime
+        Pnl_Na.Controls.Add(Lbl_Na)
+        Pnl_Na.Location = New Point(12, 205)
+        Pnl_Na.Name = "Pnl_Na"
+        Pnl_Na.Size = New Size(68, 46)
+        Pnl_Na.TabIndex = 5
         ' 
-        ' Label13
+        ' Lbl_Na
         ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(13, 8)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(42, 31)
-        Label13.TabIndex = 0
-        Label13.Text = "Na"
+        Lbl_Na.AutoSize = True
+        Lbl_Na.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_Na.Location = New Point(13, 8)
+        Lbl_Na.Name = "Lbl_Na"
+        Lbl_Na.Size = New Size(42, 31)
+        Lbl_Na.TabIndex = 0
+        Lbl_Na.Text = "Na"
         ' 
-        ' Panel5
+        ' Pnl_K
         ' 
-        Panel5.BackColor = Color.White
-        Panel5.Controls.Add(Label14)
-        Panel5.Location = New Point(12, 259)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(68, 46)
-        Panel5.TabIndex = 6
+        Pnl_K.BackColor = Color.Lime
+        Pnl_K.Controls.Add(Lbl_K)
+        Pnl_K.Location = New Point(12, 259)
+        Pnl_K.Name = "Pnl_K"
+        Pnl_K.Size = New Size(68, 46)
+        Pnl_K.TabIndex = 6
         ' 
-        ' Label14
+        ' Lbl_K
         ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.Location = New Point(18, 9)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(28, 31)
-        Label14.TabIndex = 0
-        Label14.Text = "K"
+        Lbl_K.AutoSize = True
+        Lbl_K.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_K.Location = New Point(18, 9)
+        Lbl_K.Name = "Lbl_K"
+        Lbl_K.Size = New Size(28, 31)
+        Lbl_K.TabIndex = 0
+        Lbl_K.Text = "K"
         ' 
-        ' Panel6
+        ' Pnl_Rb
         ' 
-        Panel6.BackColor = Color.White
-        Panel6.Controls.Add(Label15)
-        Panel6.Location = New Point(12, 311)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(68, 46)
-        Panel6.TabIndex = 7
+        Pnl_Rb.BackColor = Color.Lime
+        Pnl_Rb.Controls.Add(Lbl_Rb)
+        Pnl_Rb.Location = New Point(12, 311)
+        Pnl_Rb.Name = "Pnl_Rb"
+        Pnl_Rb.Size = New Size(68, 46)
+        Pnl_Rb.TabIndex = 7
         ' 
-        ' Label15
+        ' Lbl_Rb
         ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(14, 10)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(41, 31)
-        Label15.TabIndex = 0
-        Label15.Text = "Rb"
+        Lbl_Rb.AutoSize = True
+        Lbl_Rb.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_Rb.Location = New Point(14, 10)
+        Lbl_Rb.Name = "Lbl_Rb"
+        Lbl_Rb.Size = New Size(41, 31)
+        Lbl_Rb.TabIndex = 0
+        Lbl_Rb.Text = "Rb"
         ' 
-        ' Panel7
+        ' Pnl_Cs
         ' 
-        Panel7.BackColor = Color.White
-        Panel7.Controls.Add(Label16)
-        Panel7.Location = New Point(12, 363)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(68, 46)
-        Panel7.TabIndex = 8
+        Pnl_Cs.BackColor = Color.Lime
+        Pnl_Cs.Controls.Add(Lbl_Cs)
+        Pnl_Cs.Location = New Point(12, 363)
+        Pnl_Cs.Name = "Pnl_Cs"
+        Pnl_Cs.Size = New Size(68, 46)
+        Pnl_Cs.TabIndex = 8
         ' 
-        ' Label16
+        ' Lbl_Cs
         ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label16.Location = New Point(18, 9)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(37, 31)
-        Label16.TabIndex = 0
-        Label16.Text = "Cs"
+        Lbl_Cs.AutoSize = True
+        Lbl_Cs.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_Cs.Location = New Point(18, 9)
+        Lbl_Cs.Name = "Lbl_Cs"
+        Lbl_Cs.Size = New Size(37, 31)
+        Lbl_Cs.TabIndex = 0
+        Lbl_Cs.Text = "Cs"
         ' 
-        ' Panel8
+        ' Pnl_Fr
         ' 
-        Panel8.BackColor = Color.White
-        Panel8.Controls.Add(Label17)
-        Panel8.Location = New Point(12, 415)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(68, 46)
-        Panel8.TabIndex = 9
+        Pnl_Fr.BackColor = Color.Lime
+        Pnl_Fr.Controls.Add(Lbl_Fr)
+        Pnl_Fr.Location = New Point(12, 415)
+        Pnl_Fr.Name = "Pnl_Fr"
+        Pnl_Fr.Size = New Size(68, 46)
+        Pnl_Fr.TabIndex = 9
         ' 
-        ' Label17
+        ' Lbl_Fr
         ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(18, 9)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(35, 31)
-        Label17.TabIndex = 0
-        Label17.Text = "Fr"
+        Lbl_Fr.AutoSize = True
+        Lbl_Fr.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Lbl_Fr.Location = New Point(18, 9)
+        Lbl_Fr.Name = "Lbl_Fr"
+        Lbl_Fr.Size = New Size(35, 31)
+        Lbl_Fr.TabIndex = 0
+        Lbl_Fr.Text = "Fr"
         ' 
         ' Panel9
         ' 
-        Panel9.BackColor = Color.White
+        Panel9.BackColor = Color.Yellow
         Panel9.Controls.Add(Label18)
         Panel9.Location = New Point(86, 151)
         Panel9.Name = "Panel9"
@@ -732,7 +911,7 @@ Partial Class Form1
         ' 
         ' Panel10
         ' 
-        Panel10.BackColor = Color.White
+        Panel10.BackColor = Color.Yellow
         Panel10.Controls.Add(Label19)
         Panel10.Location = New Point(86, 205)
         Panel10.Name = "Panel10"
@@ -751,7 +930,7 @@ Partial Class Form1
         ' 
         ' Panel11
         ' 
-        Panel11.BackColor = Color.White
+        Panel11.BackColor = Color.Yellow
         Panel11.Controls.Add(Label20)
         Panel11.Location = New Point(86, 259)
         Panel11.Name = "Panel11"
@@ -770,7 +949,7 @@ Partial Class Form1
         ' 
         ' Panel12
         ' 
-        Panel12.BackColor = Color.White
+        Panel12.BackColor = Color.Yellow
         Panel12.Controls.Add(Label21)
         Panel12.Location = New Point(86, 311)
         Panel12.Name = "Panel12"
@@ -789,7 +968,7 @@ Partial Class Form1
         ' 
         ' Panel13
         ' 
-        Panel13.BackColor = Color.White
+        Panel13.BackColor = Color.Yellow
         Panel13.Controls.Add(Label22)
         Panel13.Location = New Point(86, 363)
         Panel13.Name = "Panel13"
@@ -808,7 +987,7 @@ Partial Class Form1
         ' 
         ' Panel14
         ' 
-        Panel14.BackColor = Color.White
+        Panel14.BackColor = Color.Yellow
         Panel14.Controls.Add(Label23)
         Panel14.Location = New Point(86, 415)
         Panel14.Name = "Panel14"
@@ -827,7 +1006,7 @@ Partial Class Form1
         ' 
         ' Panel15
         ' 
-        Panel15.BackColor = Color.White
+        Panel15.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel15.Controls.Add(Label24)
         Panel15.Location = New Point(160, 259)
         Panel15.Name = "Panel15"
@@ -838,6 +1017,7 @@ Partial Class Form1
         ' 
         Label24.AutoSize = True
         Label24.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label24.ForeColor = Color.Snow
         Label24.Location = New Point(18, 9)
         Label24.Name = "Label24"
         Label24.Size = New Size(38, 31)
@@ -846,7 +1026,7 @@ Partial Class Form1
         ' 
         ' Panel16
         ' 
-        Panel16.BackColor = Color.White
+        Panel16.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel16.Controls.Add(Label25)
         Panel16.Location = New Point(160, 311)
         Panel16.Name = "Panel16"
@@ -857,6 +1037,7 @@ Partial Class Form1
         ' 
         Label25.AutoSize = True
         Label25.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label25.ForeColor = Color.Snow
         Label25.Location = New Point(18, 9)
         Label25.Name = "Label25"
         Label25.Size = New Size(27, 31)
@@ -865,7 +1046,7 @@ Partial Class Form1
         ' 
         ' Panel17
         ' 
-        Panel17.BackColor = Color.White
+        Panel17.BackColor = Color.Aqua
         Panel17.Controls.Add(Label26)
         Panel17.Location = New Point(160, 363)
         Panel17.Name = "Panel17"
@@ -884,7 +1065,7 @@ Partial Class Form1
         ' 
         ' Panel18
         ' 
-        Panel18.BackColor = Color.White
+        Panel18.BackColor = Color.Aqua
         Panel18.Controls.Add(Label27)
         Panel18.Location = New Point(160, 415)
         Panel18.Name = "Panel18"
@@ -903,7 +1084,7 @@ Partial Class Form1
         ' 
         ' Panel19
         ' 
-        Panel19.BackColor = Color.White
+        Panel19.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel19.Controls.Add(Label28)
         Panel19.Location = New Point(234, 259)
         Panel19.Name = "Panel19"
@@ -914,6 +1095,7 @@ Partial Class Form1
         ' 
         Label28.AutoSize = True
         Label28.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label28.ForeColor = Color.Snow
         Label28.Location = New Point(18, 9)
         Label28.Name = "Label28"
         Label28.Size = New Size(32, 31)
@@ -922,7 +1104,7 @@ Partial Class Form1
         ' 
         ' Panel20
         ' 
-        Panel20.BackColor = Color.White
+        Panel20.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel20.Controls.Add(Label29)
         Panel20.Location = New Point(234, 311)
         Panel20.Name = "Panel20"
@@ -933,6 +1115,7 @@ Partial Class Form1
         ' 
         Label29.AutoSize = True
         Label29.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label29.ForeColor = Color.Snow
         Label29.Location = New Point(18, 9)
         Label29.Name = "Label29"
         Label29.Size = New Size(37, 31)
@@ -941,7 +1124,7 @@ Partial Class Form1
         ' 
         ' Panel21
         ' 
-        Panel21.BackColor = Color.White
+        Panel21.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel21.Controls.Add(Label30)
         Panel21.Location = New Point(234, 363)
         Panel21.Name = "Panel21"
@@ -952,6 +1135,7 @@ Partial Class Form1
         ' 
         Label30.AutoSize = True
         Label30.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label30.ForeColor = Color.Snow
         Label30.Location = New Point(18, 9)
         Label30.Name = "Label30"
         Label30.Size = New Size(38, 31)
@@ -960,7 +1144,7 @@ Partial Class Form1
         ' 
         ' Panel22
         ' 
-        Panel22.BackColor = Color.White
+        Panel22.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel22.Controls.Add(Label31)
         Panel22.Location = New Point(234, 415)
         Panel22.Name = "Panel22"
@@ -971,6 +1155,7 @@ Partial Class Form1
         ' 
         Label31.AutoSize = True
         Label31.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label31.ForeColor = Color.Snow
         Label31.Location = New Point(18, 9)
         Label31.Name = "Label31"
         Label31.Size = New Size(37, 31)
@@ -979,7 +1164,7 @@ Partial Class Form1
         ' 
         ' Panel23
         ' 
-        Panel23.BackColor = Color.White
+        Panel23.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel23.Controls.Add(Label32)
         Panel23.Location = New Point(308, 259)
         Panel23.Name = "Panel23"
@@ -990,6 +1175,7 @@ Partial Class Form1
         ' 
         Label32.AutoSize = True
         Label32.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label32.ForeColor = Color.Snow
         Label32.Location = New Point(18, 9)
         Label32.Name = "Label32"
         Label32.Size = New Size(28, 31)
@@ -998,7 +1184,7 @@ Partial Class Form1
         ' 
         ' Panel24
         ' 
-        Panel24.BackColor = Color.White
+        Panel24.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel24.Controls.Add(Label33)
         Panel24.Location = New Point(308, 311)
         Panel24.Name = "Panel24"
@@ -1009,6 +1195,7 @@ Partial Class Form1
         ' 
         Label33.AutoSize = True
         Label33.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label33.ForeColor = Color.Snow
         Label33.Location = New Point(18, 9)
         Label33.Name = "Label33"
         Label33.Size = New Size(42, 31)
@@ -1017,7 +1204,7 @@ Partial Class Form1
         ' 
         ' Panel25
         ' 
-        Panel25.BackColor = Color.White
+        Panel25.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel25.Controls.Add(Label34)
         Panel25.Location = New Point(308, 363)
         Panel25.Name = "Panel25"
@@ -1028,6 +1215,7 @@ Partial Class Form1
         ' 
         Label34.AutoSize = True
         Label34.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label34.ForeColor = Color.Snow
         Label34.Location = New Point(18, 9)
         Label34.Name = "Label34"
         Label34.Size = New Size(38, 31)
@@ -1036,7 +1224,7 @@ Partial Class Form1
         ' 
         ' Panel26
         ' 
-        Panel26.BackColor = Color.White
+        Panel26.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel26.Controls.Add(Label35)
         Panel26.Location = New Point(308, 415)
         Panel26.Name = "Panel26"
@@ -1047,6 +1235,7 @@ Partial Class Form1
         ' 
         Label35.AutoSize = True
         Label35.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label35.ForeColor = Color.Snow
         Label35.Location = New Point(18, 9)
         Label35.Name = "Label35"
         Label35.Size = New Size(42, 31)
@@ -1055,7 +1244,7 @@ Partial Class Form1
         ' 
         ' Panel27
         ' 
-        Panel27.BackColor = Color.White
+        Panel27.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel27.Controls.Add(Label36)
         Panel27.Location = New Point(382, 259)
         Panel27.Name = "Panel27"
@@ -1066,6 +1255,7 @@ Partial Class Form1
         ' 
         Label36.AutoSize = True
         Label36.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label36.ForeColor = Color.Snow
         Label36.Location = New Point(18, 9)
         Label36.Name = "Label36"
         Label36.Size = New Size(36, 31)
@@ -1074,7 +1264,7 @@ Partial Class Form1
         ' 
         ' Panel28
         ' 
-        Panel28.BackColor = Color.White
+        Panel28.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel28.Controls.Add(Label37)
         Panel28.Location = New Point(382, 311)
         Panel28.Name = "Panel28"
@@ -1085,6 +1275,7 @@ Partial Class Form1
         ' 
         Label37.AutoSize = True
         Label37.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label37.ForeColor = Color.Snow
         Label37.Location = New Point(18, 9)
         Label37.Name = "Label37"
         Label37.Size = New Size(44, 31)
@@ -1093,7 +1284,7 @@ Partial Class Form1
         ' 
         ' Panel29
         ' 
-        Panel29.BackColor = Color.White
+        Panel29.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel29.Controls.Add(Label38)
         Panel29.Location = New Point(382, 363)
         Panel29.Name = "Panel29"
@@ -1104,6 +1295,7 @@ Partial Class Form1
         ' 
         Label38.AutoSize = True
         Label38.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label38.ForeColor = Color.Snow
         Label38.Location = New Point(18, 9)
         Label38.Name = "Label38"
         Label38.Size = New Size(34, 31)
@@ -1112,7 +1304,7 @@ Partial Class Form1
         ' 
         ' Panel30
         ' 
-        Panel30.BackColor = Color.White
+        Panel30.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel30.Controls.Add(Label39)
         Panel30.Location = New Point(382, 415)
         Panel30.Name = "Panel30"
@@ -1123,6 +1315,7 @@ Partial Class Form1
         ' 
         Label39.AutoSize = True
         Label39.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label39.ForeColor = Color.Snow
         Label39.Location = New Point(18, 9)
         Label39.Name = "Label39"
         Label39.Size = New Size(40, 31)
@@ -1131,7 +1324,7 @@ Partial Class Form1
         ' 
         ' Panel31
         ' 
-        Panel31.BackColor = Color.White
+        Panel31.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel31.Controls.Add(Label40)
         Panel31.Location = New Point(456, 259)
         Panel31.Name = "Panel31"
@@ -1142,6 +1335,7 @@ Partial Class Form1
         ' 
         Label40.AutoSize = True
         Label40.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label40.ForeColor = Color.Snow
         Label40.Location = New Point(18, 9)
         Label40.Name = "Label40"
         Label40.Size = New Size(44, 31)
@@ -1150,7 +1344,7 @@ Partial Class Form1
         ' 
         ' Panel32
         ' 
-        Panel32.BackColor = Color.White
+        Panel32.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel32.Controls.Add(Label41)
         Panel32.Location = New Point(456, 311)
         Panel32.Name = "Panel32"
@@ -1161,6 +1355,7 @@ Partial Class Form1
         ' 
         Label41.AutoSize = True
         Label41.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label41.ForeColor = Color.Snow
         Label41.Location = New Point(18, 9)
         Label41.Name = "Label41"
         Label41.Size = New Size(35, 31)
@@ -1169,7 +1364,7 @@ Partial Class Form1
         ' 
         ' Panel33
         ' 
-        Panel33.BackColor = Color.White
+        Panel33.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel33.Controls.Add(Label42)
         Panel33.Location = New Point(456, 363)
         Panel33.Name = "Panel33"
@@ -1180,6 +1375,7 @@ Partial Class Form1
         ' 
         Label42.AutoSize = True
         Label42.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label42.ForeColor = Color.Snow
         Label42.Location = New Point(18, 9)
         Label42.Name = "Label42"
         Label42.Size = New Size(40, 31)
@@ -1188,7 +1384,7 @@ Partial Class Form1
         ' 
         ' Panel34
         ' 
-        Panel34.BackColor = Color.White
+        Panel34.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel34.Controls.Add(Label43)
         Panel34.Location = New Point(456, 415)
         Panel34.Name = "Panel34"
@@ -1199,6 +1395,7 @@ Partial Class Form1
         ' 
         Label43.AutoSize = True
         Label43.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label43.ForeColor = Color.Snow
         Label43.Location = New Point(18, 9)
         Label43.Name = "Label43"
         Label43.Size = New Size(40, 31)
@@ -1207,9 +1404,9 @@ Partial Class Form1
         ' 
         ' Panel35
         ' 
-        Panel35.BackColor = Color.White
+        Panel35.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel35.Controls.Add(Label44)
-        Panel35.Location = New Point(530, 259)
+        Panel35.Location = New Point(604, 259)
         Panel35.Name = "Panel35"
         Panel35.Size = New Size(68, 46)
         Panel35.TabIndex = 36
@@ -1218,6 +1415,7 @@ Partial Class Form1
         ' 
         Label44.AutoSize = True
         Label44.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label44.ForeColor = Color.Snow
         Label44.Location = New Point(18, 9)
         Label44.Name = "Label44"
         Label44.Size = New Size(40, 31)
@@ -1226,9 +1424,9 @@ Partial Class Form1
         ' 
         ' Panel36
         ' 
-        Panel36.BackColor = Color.White
+        Panel36.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel36.Controls.Add(Label45)
-        Panel36.Location = New Point(530, 311)
+        Panel36.Location = New Point(604, 311)
         Panel36.Name = "Panel36"
         Panel36.Size = New Size(68, 46)
         Panel36.TabIndex = 37
@@ -1237,6 +1435,7 @@ Partial Class Form1
         ' 
         Label45.AutoSize = True
         Label45.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label45.ForeColor = Color.Snow
         Label45.Location = New Point(18, 9)
         Label45.Name = "Label45"
         Label45.Size = New Size(40, 31)
@@ -1245,9 +1444,9 @@ Partial Class Form1
         ' 
         ' Panel37
         ' 
-        Panel37.BackColor = Color.White
+        Panel37.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel37.Controls.Add(Label46)
-        Panel37.Location = New Point(530, 363)
+        Panel37.Location = New Point(604, 363)
         Panel37.Name = "Panel37"
         Panel37.Size = New Size(68, 46)
         Panel37.TabIndex = 38
@@ -1256,6 +1455,7 @@ Partial Class Form1
         ' 
         Label46.AutoSize = True
         Label46.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label46.ForeColor = Color.Snow
         Label46.Location = New Point(18, 9)
         Label46.Name = "Label46"
         Label46.Size = New Size(29, 31)
@@ -1264,9 +1464,9 @@ Partial Class Form1
         ' 
         ' Panel38
         ' 
-        Panel38.BackColor = Color.White
+        Panel38.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel38.Controls.Add(Label47)
-        Panel38.Location = New Point(530, 415)
+        Panel38.Location = New Point(604, 415)
         Panel38.Name = "Panel38"
         Panel38.Size = New Size(68, 46)
         Panel38.TabIndex = 39
@@ -1275,6 +1475,7 @@ Partial Class Form1
         ' 
         Label47.AutoSize = True
         Label47.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label47.ForeColor = Color.Snow
         Label47.Location = New Point(18, 9)
         Label47.Name = "Label47"
         Label47.Size = New Size(40, 31)
@@ -1283,9 +1484,9 @@ Partial Class Form1
         ' 
         ' Panel39
         ' 
-        Panel39.BackColor = Color.White
+        Panel39.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel39.Controls.Add(Label48)
-        Panel39.Location = New Point(604, 259)
+        Panel39.Location = New Point(678, 259)
         Panel39.Name = "Panel39"
         Panel39.Size = New Size(68, 46)
         Panel39.TabIndex = 40
@@ -1294,6 +1495,7 @@ Partial Class Form1
         ' 
         Label48.AutoSize = True
         Label48.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label48.ForeColor = Color.Snow
         Label48.Location = New Point(18, 9)
         Label48.Name = "Label48"
         Label48.Size = New Size(34, 31)
@@ -1302,9 +1504,9 @@ Partial Class Form1
         ' 
         ' Panel40
         ' 
-        Panel40.BackColor = Color.White
+        Panel40.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel40.Controls.Add(Label49)
-        Panel40.Location = New Point(604, 311)
+        Panel40.Location = New Point(678, 311)
         Panel40.Name = "Panel40"
         Panel40.Size = New Size(68, 46)
         Panel40.TabIndex = 41
@@ -1313,6 +1515,7 @@ Partial Class Form1
         ' 
         Label49.AutoSize = True
         Label49.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label49.ForeColor = Color.Snow
         Label49.Location = New Point(18, 9)
         Label49.Name = "Label49"
         Label49.Size = New Size(40, 31)
@@ -1321,9 +1524,9 @@ Partial Class Form1
         ' 
         ' Panel41
         ' 
-        Panel41.BackColor = Color.White
+        Panel41.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel41.Controls.Add(Label50)
-        Panel41.Location = New Point(604, 363)
+        Panel41.Location = New Point(678, 363)
         Panel41.Name = "Panel41"
         Panel41.Size = New Size(68, 46)
         Panel41.TabIndex = 42
@@ -1332,6 +1535,7 @@ Partial Class Form1
         ' 
         Label50.AutoSize = True
         Label50.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label50.ForeColor = Color.Snow
         Label50.Location = New Point(18, 9)
         Label50.Name = "Label50"
         Label50.Size = New Size(36, 31)
@@ -1340,9 +1544,9 @@ Partial Class Form1
         ' 
         ' Panel42
         ' 
-        Panel42.BackColor = Color.White
+        Panel42.BackColor = Color.Pink
         Panel42.Controls.Add(Label51)
-        Panel42.Location = New Point(604, 415)
+        Panel42.Location = New Point(678, 415)
         Panel42.Name = "Panel42"
         Panel42.Size = New Size(68, 46)
         Panel42.TabIndex = 43
@@ -1351,6 +1555,7 @@ Partial Class Form1
         ' 
         Label51.AutoSize = True
         Label51.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label51.ForeColor = Color.Black
         Label51.Location = New Point(18, 9)
         Label51.Name = "Label51"
         Label51.Size = New Size(39, 31)
@@ -1359,9 +1564,9 @@ Partial Class Form1
         ' 
         ' Panel43
         ' 
-        Panel43.BackColor = Color.White
+        Panel43.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel43.Controls.Add(Label52)
-        Panel43.Location = New Point(678, 259)
+        Panel43.Location = New Point(752, 259)
         Panel43.Name = "Panel43"
         Panel43.Size = New Size(68, 46)
         Panel43.TabIndex = 44
@@ -1370,6 +1575,7 @@ Partial Class Form1
         ' 
         Label52.AutoSize = True
         Label52.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label52.ForeColor = Color.Snow
         Label52.Location = New Point(18, 9)
         Label52.Name = "Label52"
         Label52.Size = New Size(39, 31)
@@ -1378,9 +1584,9 @@ Partial Class Form1
         ' 
         ' Panel44
         ' 
-        Panel44.BackColor = Color.White
+        Panel44.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel44.Controls.Add(Label53)
-        Panel44.Location = New Point(678, 311)
+        Panel44.Location = New Point(752, 311)
         Panel44.Name = "Panel44"
         Panel44.Size = New Size(68, 46)
         Panel44.TabIndex = 45
@@ -1389,6 +1595,7 @@ Partial Class Form1
         ' 
         Label53.AutoSize = True
         Label53.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label53.ForeColor = Color.Snow
         Label53.Location = New Point(18, 9)
         Label53.Name = "Label53"
         Label53.Size = New Size(40, 31)
@@ -1397,9 +1604,9 @@ Partial Class Form1
         ' 
         ' Panel45
         ' 
-        Panel45.BackColor = Color.White
+        Panel45.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel45.Controls.Add(Label54)
-        Panel45.Location = New Point(678, 363)
+        Panel45.Location = New Point(752, 363)
         Panel45.Name = "Panel45"
         Panel45.Size = New Size(68, 46)
         Panel45.TabIndex = 46
@@ -1408,6 +1615,7 @@ Partial Class Form1
         ' 
         Label54.AutoSize = True
         Label54.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label54.ForeColor = Color.Snow
         Label54.Location = New Point(18, 9)
         Label54.Name = "Label54"
         Label54.Size = New Size(39, 31)
@@ -1416,9 +1624,9 @@ Partial Class Form1
         ' 
         ' Panel46
         ' 
-        Panel46.BackColor = Color.White
+        Panel46.BackColor = Color.Pink
         Panel46.Controls.Add(Label55)
-        Panel46.Location = New Point(678, 415)
+        Panel46.Location = New Point(752, 415)
         Panel46.Name = "Panel46"
         Panel46.Size = New Size(68, 46)
         Panel46.TabIndex = 47
@@ -1427,6 +1635,7 @@ Partial Class Form1
         ' 
         Label55.AutoSize = True
         Label55.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label55.ForeColor = Color.Black
         Label55.Location = New Point(18, 9)
         Label55.Name = "Label55"
         Label55.Size = New Size(41, 31)
@@ -1435,9 +1644,9 @@ Partial Class Form1
         ' 
         ' Panel47
         ' 
-        Panel47.BackColor = Color.White
+        Panel47.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel47.Controls.Add(Label56)
-        Panel47.Location = New Point(752, 259)
+        Panel47.Location = New Point(826, 259)
         Panel47.Name = "Panel47"
         Panel47.Size = New Size(68, 46)
         Panel47.TabIndex = 48
@@ -1446,6 +1655,7 @@ Partial Class Form1
         ' 
         Label56.AutoSize = True
         Label56.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label56.ForeColor = Color.Snow
         Label56.Location = New Point(18, 9)
         Label56.Name = "Label56"
         Label56.Size = New Size(41, 31)
@@ -1454,9 +1664,9 @@ Partial Class Form1
         ' 
         ' Panel48
         ' 
-        Panel48.BackColor = Color.White
+        Panel48.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel48.Controls.Add(Label57)
-        Panel48.Location = New Point(752, 311)
+        Panel48.Location = New Point(826, 311)
         Panel48.Name = "Panel48"
         Panel48.Size = New Size(68, 46)
         Panel48.TabIndex = 49
@@ -1465,6 +1675,7 @@ Partial Class Form1
         ' 
         Label57.AutoSize = True
         Label57.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label57.ForeColor = Color.Snow
         Label57.Location = New Point(18, 9)
         Label57.Name = "Label57"
         Label57.Size = New Size(40, 31)
@@ -1473,9 +1684,9 @@ Partial Class Form1
         ' 
         ' Panel49
         ' 
-        Panel49.BackColor = Color.White
+        Panel49.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
         Panel49.Controls.Add(Label58)
-        Panel49.Location = New Point(752, 363)
+        Panel49.Location = New Point(826, 363)
         Panel49.Name = "Panel49"
         Panel49.Size = New Size(68, 46)
         Panel49.TabIndex = 50
@@ -1484,6 +1695,7 @@ Partial Class Form1
         ' 
         Label58.AutoSize = True
         Label58.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label58.ForeColor = Color.Snow
         Label58.Location = New Point(18, 9)
         Label58.Name = "Label58"
         Label58.Size = New Size(42, 31)
@@ -1492,9 +1704,9 @@ Partial Class Form1
         ' 
         ' Panel50
         ' 
-        Panel50.BackColor = Color.White
+        Panel50.BackColor = Color.Pink
         Panel50.Controls.Add(Label59)
-        Panel50.Location = New Point(752, 415)
+        Panel50.Location = New Point(826, 415)
         Panel50.Name = "Panel50"
         Panel50.Size = New Size(68, 46)
         Panel50.TabIndex = 51
@@ -1503,6 +1715,7 @@ Partial Class Form1
         ' 
         Label59.AutoSize = True
         Label59.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label59.ForeColor = Color.Black
         Label59.Location = New Point(18, 9)
         Label59.Name = "Label59"
         Label59.Size = New Size(40, 31)
@@ -1511,9 +1724,9 @@ Partial Class Form1
         ' 
         ' Panel51
         ' 
-        Panel51.BackColor = Color.White
+        Panel51.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel51.Controls.Add(Label60)
-        Panel51.Location = New Point(826, 151)
+        Panel51.Location = New Point(903, 151)
         Panel51.Name = "Panel51"
         Panel51.Size = New Size(68, 46)
         Panel51.TabIndex = 52
@@ -1522,6 +1735,7 @@ Partial Class Form1
         ' 
         Label60.AutoSize = True
         Label60.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label60.ForeColor = Color.Snow
         Label60.Location = New Point(18, 9)
         Label60.Name = "Label60"
         Label60.Size = New Size(28, 31)
@@ -1530,9 +1744,9 @@ Partial Class Form1
         ' 
         ' Panel52
         ' 
-        Panel52.BackColor = Color.White
+        Panel52.BackColor = Color.DarkCyan
         Panel52.Controls.Add(Label61)
-        Panel52.Location = New Point(826, 205)
+        Panel52.Location = New Point(903, 205)
         Panel52.Name = "Panel52"
         Panel52.Size = New Size(68, 46)
         Panel52.TabIndex = 53
@@ -1541,6 +1755,7 @@ Partial Class Form1
         ' 
         Label61.AutoSize = True
         Label61.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label61.ForeColor = Color.Snow
         Label61.Location = New Point(18, 9)
         Label61.Name = "Label61"
         Label61.Size = New Size(33, 31)
@@ -1549,9 +1764,9 @@ Partial Class Form1
         ' 
         ' Panel53
         ' 
-        Panel53.BackColor = Color.White
+        Panel53.BackColor = Color.DarkCyan
         Panel53.Controls.Add(Label62)
-        Panel53.Location = New Point(826, 259)
+        Panel53.Location = New Point(903, 259)
         Panel53.Name = "Panel53"
         Panel53.Size = New Size(68, 46)
         Panel53.TabIndex = 54
@@ -1560,6 +1775,7 @@ Partial Class Form1
         ' 
         Label62.AutoSize = True
         Label62.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label62.ForeColor = Color.Snow
         Label62.Location = New Point(18, 9)
         Label62.Name = "Label62"
         Label62.Size = New Size(42, 31)
@@ -1568,9 +1784,9 @@ Partial Class Form1
         ' 
         ' Panel54
         ' 
-        Panel54.BackColor = Color.White
+        Panel54.BackColor = Color.DarkCyan
         Panel54.Controls.Add(Label63)
-        Panel54.Location = New Point(826, 311)
+        Panel54.Location = New Point(903, 311)
         Panel54.Name = "Panel54"
         Panel54.Size = New Size(68, 46)
         Panel54.TabIndex = 55
@@ -1579,6 +1795,7 @@ Partial Class Form1
         ' 
         Label63.AutoSize = True
         Label63.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label63.ForeColor = Color.Snow
         Label63.Location = New Point(18, 9)
         Label63.Name = "Label63"
         Label63.Size = New Size(33, 31)
@@ -1587,9 +1804,9 @@ Partial Class Form1
         ' 
         ' Panel56
         ' 
-        Panel56.BackColor = Color.White
+        Panel56.BackColor = Color.DarkCyan
         Panel56.Controls.Add(Label65)
-        Panel56.Location = New Point(826, 363)
+        Panel56.Location = New Point(903, 363)
         Panel56.Name = "Panel56"
         Panel56.Size = New Size(68, 46)
         Panel56.TabIndex = 57
@@ -1598,6 +1815,7 @@ Partial Class Form1
         ' 
         Label65.AutoSize = True
         Label65.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label65.ForeColor = Color.Snow
         Label65.Location = New Point(18, 9)
         Label65.Name = "Label65"
         Label65.Size = New Size(33, 31)
@@ -1606,9 +1824,9 @@ Partial Class Form1
         ' 
         ' Panel57
         ' 
-        Panel57.BackColor = Color.White
+        Panel57.BackColor = Color.Pink
         Panel57.Controls.Add(Label66)
-        Panel57.Location = New Point(826, 415)
+        Panel57.Location = New Point(903, 415)
         Panel57.Name = "Panel57"
         Panel57.Size = New Size(68, 46)
         Panel57.TabIndex = 58
@@ -1617,6 +1835,7 @@ Partial Class Form1
         ' 
         Label66.AutoSize = True
         Label66.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label66.ForeColor = Color.Black
         Label66.Location = New Point(18, 9)
         Label66.Name = "Label66"
         Label66.Size = New Size(41, 31)
@@ -1627,7 +1846,7 @@ Partial Class Form1
         ' 
         Panel55.BackColor = Color.White
         Panel55.Controls.Add(Label64)
-        Panel55.Location = New Point(900, 151)
+        Panel55.Location = New Point(977, 151)
         Panel55.Name = "Panel55"
         Panel55.Size = New Size(68, 46)
         Panel55.TabIndex = 59
@@ -1644,9 +1863,9 @@ Partial Class Form1
         ' 
         ' Panel58
         ' 
-        Panel58.BackColor = Color.White
+        Panel58.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel58.Controls.Add(Label67)
-        Panel58.Location = New Point(900, 205)
+        Panel58.Location = New Point(977, 205)
         Panel58.Name = "Panel58"
         Panel58.Size = New Size(68, 46)
         Panel58.TabIndex = 60
@@ -1655,6 +1874,7 @@ Partial Class Form1
         ' 
         Label67.AutoSize = True
         Label67.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label67.ForeColor = Color.Snow
         Label67.Location = New Point(18, 9)
         Label67.Name = "Label67"
         Label67.Size = New Size(32, 31)
@@ -1663,9 +1883,9 @@ Partial Class Form1
         ' 
         ' Panel59
         ' 
-        Panel59.BackColor = Color.White
+        Panel59.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel59.Controls.Add(Label68)
-        Panel59.Location = New Point(900, 259)
+        Panel59.Location = New Point(977, 259)
         Panel59.Name = "Panel59"
         Panel59.Size = New Size(68, 46)
         Panel59.TabIndex = 61
@@ -1674,6 +1894,7 @@ Partial Class Form1
         ' 
         Label68.AutoSize = True
         Label68.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label68.ForeColor = Color.Snow
         Label68.Location = New Point(18, 9)
         Label68.Name = "Label68"
         Label68.Size = New Size(41, 31)
@@ -1682,9 +1903,9 @@ Partial Class Form1
         ' 
         ' Panel60
         ' 
-        Panel60.BackColor = Color.White
+        Panel60.BackColor = Color.DarkCyan
         Panel60.Controls.Add(Label69)
-        Panel60.Location = New Point(900, 311)
+        Panel60.Location = New Point(977, 311)
         Panel60.Name = "Panel60"
         Panel60.Size = New Size(68, 46)
         Panel60.TabIndex = 62
@@ -1693,6 +1914,7 @@ Partial Class Form1
         ' 
         Label69.AutoSize = True
         Label69.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label69.ForeColor = Color.Snow
         Label69.Location = New Point(18, 9)
         Label69.Name = "Label69"
         Label69.Size = New Size(40, 31)
@@ -1701,9 +1923,9 @@ Partial Class Form1
         ' 
         ' Panel61
         ' 
-        Panel61.BackColor = Color.White
+        Panel61.BackColor = Color.DarkCyan
         Panel61.Controls.Add(Label70)
-        Panel61.Location = New Point(900, 363)
+        Panel61.Location = New Point(977, 363)
         Panel61.Name = "Panel61"
         Panel61.Size = New Size(68, 46)
         Panel61.TabIndex = 63
@@ -1712,6 +1934,7 @@ Partial Class Form1
         ' 
         Label70.AutoSize = True
         Label70.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label70.ForeColor = Color.Snow
         Label70.Location = New Point(18, 9)
         Label70.Name = "Label70"
         Label70.Size = New Size(40, 31)
@@ -1720,9 +1943,9 @@ Partial Class Form1
         ' 
         ' Panel62
         ' 
-        Panel62.BackColor = Color.White
+        Panel62.BackColor = Color.Pink
         Panel62.Controls.Add(Label71)
-        Panel62.Location = New Point(900, 415)
+        Panel62.Location = New Point(977, 415)
         Panel62.Name = "Panel62"
         Panel62.Size = New Size(68, 46)
         Panel62.TabIndex = 64
@@ -1731,6 +1954,7 @@ Partial Class Form1
         ' 
         Label71.AutoSize = True
         Label71.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label71.ForeColor = Color.Black
         Label71.Location = New Point(18, 9)
         Label71.Name = "Label71"
         Label71.Size = New Size(32, 31)
@@ -1741,7 +1965,7 @@ Partial Class Form1
         ' 
         Panel63.BackColor = Color.White
         Panel63.Controls.Add(Label72)
-        Panel63.Location = New Point(974, 151)
+        Panel63.Location = New Point(1051, 151)
         Panel63.Name = "Panel63"
         Panel63.Size = New Size(68, 46)
         Panel63.TabIndex = 65
@@ -1760,7 +1984,7 @@ Partial Class Form1
         ' 
         Panel64.BackColor = Color.White
         Panel64.Controls.Add(Label73)
-        Panel64.Location = New Point(974, 205)
+        Panel64.Location = New Point(1051, 205)
         Panel64.Name = "Panel64"
         Panel64.Size = New Size(68, 46)
         Panel64.TabIndex = 66
@@ -1777,9 +2001,9 @@ Partial Class Form1
         ' 
         ' Panel65
         ' 
-        Panel65.BackColor = Color.White
+        Panel65.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel65.Controls.Add(Label74)
-        Panel65.Location = New Point(974, 259)
+        Panel65.Location = New Point(1051, 259)
         Panel65.Name = "Panel65"
         Panel65.Size = New Size(68, 46)
         Panel65.TabIndex = 67
@@ -1788,6 +2012,7 @@ Partial Class Form1
         ' 
         Label74.AutoSize = True
         Label74.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label74.ForeColor = Color.Snow
         Label74.Location = New Point(18, 9)
         Label74.Name = "Label74"
         Label74.Size = New Size(37, 31)
@@ -1796,9 +2021,9 @@ Partial Class Form1
         ' 
         ' Panel66
         ' 
-        Panel66.BackColor = Color.White
+        Panel66.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel66.Controls.Add(Label75)
-        Panel66.Location = New Point(974, 311)
+        Panel66.Location = New Point(1051, 311)
         Panel66.Name = "Panel66"
         Panel66.Size = New Size(68, 46)
         Panel66.TabIndex = 68
@@ -1807,6 +2032,7 @@ Partial Class Form1
         ' 
         Label75.AutoSize = True
         Label75.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label75.ForeColor = Color.Snow
         Label75.Location = New Point(18, 9)
         Label75.Name = "Label75"
         Label75.Size = New Size(40, 31)
@@ -1815,9 +2041,9 @@ Partial Class Form1
         ' 
         ' Panel67
         ' 
-        Panel67.BackColor = Color.White
+        Panel67.BackColor = Color.DarkCyan
         Panel67.Controls.Add(Label76)
-        Panel67.Location = New Point(974, 363)
+        Panel67.Location = New Point(1051, 363)
         Panel67.Name = "Panel67"
         Panel67.Size = New Size(68, 46)
         Panel67.TabIndex = 69
@@ -1826,6 +2052,7 @@ Partial Class Form1
         ' 
         Label76.AutoSize = True
         Label76.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label76.ForeColor = Color.Snow
         Label76.Location = New Point(18, 9)
         Label76.Name = "Label76"
         Label76.Size = New Size(33, 31)
@@ -1834,9 +2061,9 @@ Partial Class Form1
         ' 
         ' Panel68
         ' 
-        Panel68.BackColor = Color.White
+        Panel68.BackColor = Color.Pink
         Panel68.Controls.Add(Label77)
-        Panel68.Location = New Point(974, 415)
+        Panel68.Location = New Point(1051, 415)
         Panel68.Name = "Panel68"
         Panel68.Size = New Size(68, 46)
         Panel68.TabIndex = 70
@@ -1845,6 +2072,7 @@ Partial Class Form1
         ' 
         Label77.AutoSize = True
         Label77.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label77.ForeColor = Color.Black
         Label77.Location = New Point(18, 9)
         Label77.Name = "Label77"
         Label77.Size = New Size(42, 31)
@@ -1855,7 +2083,7 @@ Partial Class Form1
         ' 
         Panel69.BackColor = Color.White
         Panel69.Controls.Add(Label78)
-        Panel69.Location = New Point(1048, 151)
+        Panel69.Location = New Point(1125, 151)
         Panel69.Name = "Panel69"
         Panel69.Size = New Size(68, 46)
         Panel69.TabIndex = 71
@@ -1874,7 +2102,7 @@ Partial Class Form1
         ' 
         Panel70.BackColor = Color.White
         Panel70.Controls.Add(Label79)
-        Panel70.Location = New Point(1049, 205)
+        Panel70.Location = New Point(1126, 205)
         Panel70.Name = "Panel70"
         Panel70.Size = New Size(68, 46)
         Panel70.TabIndex = 72
@@ -1893,7 +2121,7 @@ Partial Class Form1
         ' 
         Panel71.BackColor = Color.White
         Panel71.Controls.Add(Label80)
-        Panel71.Location = New Point(1049, 259)
+        Panel71.Location = New Point(1126, 259)
         Panel71.Name = "Panel71"
         Panel71.Size = New Size(68, 46)
         Panel71.TabIndex = 73
@@ -1910,9 +2138,9 @@ Partial Class Form1
         ' 
         ' Panel72
         ' 
-        Panel72.BackColor = Color.White
+        Panel72.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel72.Controls.Add(Label81)
-        Panel72.Location = New Point(1049, 311)
+        Panel72.Location = New Point(1126, 311)
         Panel72.Name = "Panel72"
         Panel72.Size = New Size(68, 46)
         Panel72.TabIndex = 74
@@ -1921,6 +2149,7 @@ Partial Class Form1
         ' 
         Label81.AutoSize = True
         Label81.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label81.ForeColor = Color.Snow
         Label81.Location = New Point(18, 9)
         Label81.Name = "Label81"
         Label81.Size = New Size(36, 31)
@@ -1929,9 +2158,9 @@ Partial Class Form1
         ' 
         ' Panel73
         ' 
-        Panel73.BackColor = Color.White
+        Panel73.BackColor = Color.DarkCyan
         Panel73.Controls.Add(Label82)
-        Panel73.Location = New Point(1049, 363)
+        Panel73.Location = New Point(1126, 363)
         Panel73.Name = "Panel73"
         Panel73.Size = New Size(68, 46)
         Panel73.TabIndex = 75
@@ -1940,6 +2169,7 @@ Partial Class Form1
         ' 
         Label82.AutoSize = True
         Label82.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label82.ForeColor = Color.Snow
         Label82.Location = New Point(18, 9)
         Label82.Name = "Label82"
         Label82.Size = New Size(40, 31)
@@ -1948,9 +2178,9 @@ Partial Class Form1
         ' 
         ' Panel74
         ' 
-        Panel74.BackColor = Color.White
+        Panel74.BackColor = Color.Pink
         Panel74.Controls.Add(Label83)
-        Panel74.Location = New Point(1049, 415)
+        Panel74.Location = New Point(1126, 415)
         Panel74.Name = "Panel74"
         Panel74.Size = New Size(68, 46)
         Panel74.TabIndex = 76
@@ -1959,6 +2189,7 @@ Partial Class Form1
         ' 
         Label83.AutoSize = True
         Label83.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label83.ForeColor = Color.Black
         Label83.Location = New Point(18, 9)
         Label83.Name = "Label83"
         Label83.Size = New Size(37, 31)
@@ -1969,7 +2200,7 @@ Partial Class Form1
         ' 
         Panel75.BackColor = Color.White
         Panel75.Controls.Add(Label84)
-        Panel75.Location = New Point(1122, 151)
+        Panel75.Location = New Point(1199, 151)
         Panel75.Name = "Panel75"
         Panel75.Size = New Size(68, 46)
         Panel75.TabIndex = 77
@@ -1988,7 +2219,7 @@ Partial Class Form1
         ' 
         Panel76.BackColor = Color.White
         Panel76.Controls.Add(Label85)
-        Panel76.Location = New Point(1123, 205)
+        Panel76.Location = New Point(1200, 205)
         Panel76.Name = "Panel76"
         Panel76.Size = New Size(68, 46)
         Panel76.TabIndex = 78
@@ -2007,7 +2238,7 @@ Partial Class Form1
         ' 
         Panel77.BackColor = Color.White
         Panel77.Controls.Add(Label86)
-        Panel77.Location = New Point(1123, 259)
+        Panel77.Location = New Point(1200, 259)
         Panel77.Name = "Panel77"
         Panel77.Size = New Size(68, 46)
         Panel77.TabIndex = 79
@@ -2026,7 +2257,7 @@ Partial Class Form1
         ' 
         Panel78.BackColor = Color.White
         Panel78.Controls.Add(Label87)
-        Panel78.Location = New Point(1122, 311)
+        Panel78.Location = New Point(1199, 311)
         Panel78.Name = "Panel78"
         Panel78.Size = New Size(68, 46)
         Panel78.TabIndex = 80
@@ -2043,9 +2274,9 @@ Partial Class Form1
         ' 
         ' Panel79
         ' 
-        Panel79.BackColor = Color.White
+        Panel79.BackColor = Color.FromArgb(CByte(119), CByte(119), CByte(119))
         Panel79.Controls.Add(Label88)
-        Panel79.Location = New Point(1123, 363)
+        Panel79.Location = New Point(1200, 363)
         Panel79.Name = "Panel79"
         Panel79.Size = New Size(68, 46)
         Panel79.TabIndex = 81
@@ -2054,6 +2285,7 @@ Partial Class Form1
         ' 
         Label88.AutoSize = True
         Label88.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label88.ForeColor = Color.Snow
         Label88.Location = New Point(18, 9)
         Label88.Name = "Label88"
         Label88.Size = New Size(36, 31)
@@ -2062,9 +2294,9 @@ Partial Class Form1
         ' 
         ' Panel80
         ' 
-        Panel80.BackColor = Color.White
+        Panel80.BackColor = Color.Pink
         Panel80.Controls.Add(Label89)
-        Panel80.Location = New Point(1123, 415)
+        Panel80.Location = New Point(1200, 415)
         Panel80.Name = "Panel80"
         Panel80.Size = New Size(68, 46)
         Panel80.TabIndex = 82
@@ -2073,6 +2305,7 @@ Partial Class Form1
         ' 
         Label89.AutoSize = True
         Label89.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label89.ForeColor = Color.Black
         Label89.Location = New Point(18, 9)
         Label89.Name = "Label89"
         Label89.Size = New Size(34, 31)
@@ -2081,9 +2314,9 @@ Partial Class Form1
         ' 
         ' Panel81
         ' 
-        Panel81.BackColor = Color.White
+        Panel81.BackColor = Color.Purple
         Panel81.Controls.Add(Label90)
-        Panel81.Location = New Point(1196, 151)
+        Panel81.Location = New Point(1273, 151)
         Panel81.Name = "Panel81"
         Panel81.Size = New Size(68, 46)
         Panel81.TabIndex = 83
@@ -2092,6 +2325,7 @@ Partial Class Form1
         ' 
         Label90.AutoSize = True
         Label90.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label90.ForeColor = Color.Snow
         Label90.Location = New Point(18, 9)
         Label90.Name = "Label90"
         Label90.Size = New Size(41, 31)
@@ -2100,9 +2334,9 @@ Partial Class Form1
         ' 
         ' Panel82
         ' 
-        Panel82.BackColor = Color.White
+        Panel82.BackColor = Color.Purple
         Panel82.Controls.Add(Label91)
-        Panel82.Location = New Point(1197, 205)
+        Panel82.Location = New Point(1274, 205)
         Panel82.Name = "Panel82"
         Panel82.Size = New Size(68, 46)
         Panel82.TabIndex = 84
@@ -2111,6 +2345,7 @@ Partial Class Form1
         ' 
         Label91.AutoSize = True
         Label91.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label91.ForeColor = Color.Snow
         Label91.Location = New Point(18, 9)
         Label91.Name = "Label91"
         Label91.Size = New Size(36, 31)
@@ -2119,9 +2354,9 @@ Partial Class Form1
         ' 
         ' Panel83
         ' 
-        Panel83.BackColor = Color.White
+        Panel83.BackColor = Color.Purple
         Panel83.Controls.Add(Label92)
-        Panel83.Location = New Point(1197, 259)
+        Panel83.Location = New Point(1274, 259)
         Panel83.Name = "Panel83"
         Panel83.Size = New Size(68, 46)
         Panel83.TabIndex = 85
@@ -2130,6 +2365,7 @@ Partial Class Form1
         ' 
         Label92.AutoSize = True
         Label92.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label92.ForeColor = Color.Snow
         Label92.Location = New Point(18, 9)
         Label92.Name = "Label92"
         Label92.Size = New Size(37, 31)
@@ -2138,9 +2374,9 @@ Partial Class Form1
         ' 
         ' Panel84
         ' 
-        Panel84.BackColor = Color.White
+        Panel84.BackColor = Color.Purple
         Panel84.Controls.Add(Label93)
-        Panel84.Location = New Point(1196, 311)
+        Panel84.Location = New Point(1273, 311)
         Panel84.Name = "Panel84"
         Panel84.Size = New Size(68, 46)
         Panel84.TabIndex = 86
@@ -2149,6 +2385,7 @@ Partial Class Form1
         ' 
         Label93.AutoSize = True
         Label93.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label93.ForeColor = Color.Snow
         Label93.Location = New Point(18, 9)
         Label93.Name = "Label93"
         Label93.Size = New Size(40, 31)
@@ -2157,9 +2394,9 @@ Partial Class Form1
         ' 
         ' Panel85
         ' 
-        Panel85.BackColor = Color.White
+        Panel85.BackColor = Color.Purple
         Panel85.Controls.Add(Label94)
-        Panel85.Location = New Point(1197, 363)
+        Panel85.Location = New Point(1274, 363)
         Panel85.Name = "Panel85"
         Panel85.Size = New Size(68, 46)
         Panel85.TabIndex = 87
@@ -2168,6 +2405,7 @@ Partial Class Form1
         ' 
         Label94.AutoSize = True
         Label94.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label94.ForeColor = Color.Snow
         Label94.Location = New Point(18, 9)
         Label94.Name = "Label94"
         Label94.Size = New Size(41, 31)
@@ -2176,9 +2414,9 @@ Partial Class Form1
         ' 
         ' Panel86
         ' 
-        Panel86.BackColor = Color.White
+        Panel86.BackColor = Color.Pink
         Panel86.Controls.Add(Label95)
-        Panel86.Location = New Point(1197, 415)
+        Panel86.Location = New Point(1274, 415)
         Panel86.Name = "Panel86"
         Panel86.Size = New Size(68, 46)
         Panel86.TabIndex = 88
@@ -2187,6 +2425,7 @@ Partial Class Form1
         ' 
         Label95.AutoSize = True
         Label95.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label95.ForeColor = Color.Black
         Label95.Location = New Point(18, 9)
         Label95.Name = "Label95"
         Label95.Size = New Size(43, 31)
@@ -2195,9 +2434,9 @@ Partial Class Form1
         ' 
         ' Panel87
         ' 
-        Panel87.BackColor = Color.White
+        Panel87.BackColor = Color.Purple
         Panel87.Controls.Add(Label96)
-        Panel87.Location = New Point(1197, 97)
+        Panel87.Location = New Point(1274, 97)
         Panel87.Name = "Panel87"
         Panel87.Size = New Size(68, 46)
         Panel87.TabIndex = 89
@@ -2206,6 +2445,7 @@ Partial Class Form1
         ' 
         Label96.AutoSize = True
         Label96.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label96.ForeColor = Color.Snow
         Label96.Location = New Point(18, 9)
         Label96.Name = "Label96"
         Label96.Size = New Size(41, 31)
@@ -2214,7 +2454,7 @@ Partial Class Form1
         ' 
         ' Panel88
         ' 
-        Panel88.BackColor = Color.White
+        Panel88.BackColor = Color.Aqua
         Panel88.Controls.Add(Label8)
         Panel88.Location = New Point(160, 505)
         Panel88.Name = "Panel88"
@@ -2233,7 +2473,7 @@ Partial Class Form1
         ' 
         ' Panel89
         ' 
-        Panel89.BackColor = Color.White
+        Panel89.BackColor = Color.Aqua
         Panel89.Controls.Add(Label97)
         Panel89.Location = New Point(160, 557)
         Panel89.Name = "Panel89"
@@ -2252,7 +2492,7 @@ Partial Class Form1
         ' 
         ' Panel90
         ' 
-        Panel90.BackColor = Color.White
+        Panel90.BackColor = Color.Red
         Panel90.Controls.Add(Label98)
         Panel90.Location = New Point(234, 505)
         Panel90.Name = "Panel90"
@@ -2263,6 +2503,7 @@ Partial Class Form1
         ' 
         Label98.AutoSize = True
         Label98.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label98.ForeColor = Color.Snow
         Label98.Location = New Point(18, 9)
         Label98.Name = "Label98"
         Label98.Size = New Size(39, 31)
@@ -2271,7 +2512,7 @@ Partial Class Form1
         ' 
         ' Panel91
         ' 
-        Panel91.BackColor = Color.White
+        Panel91.BackColor = Color.Orange
         Panel91.Controls.Add(Label99)
         Panel91.Location = New Point(234, 557)
         Panel91.Name = "Panel91"
@@ -2282,6 +2523,7 @@ Partial Class Form1
         ' 
         Label99.AutoSize = True
         Label99.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label99.ForeColor = Color.Snow
         Label99.Location = New Point(18, 9)
         Label99.Name = "Label99"
         Label99.Size = New Size(38, 31)
@@ -2290,7 +2532,7 @@ Partial Class Form1
         ' 
         ' Panel92
         ' 
-        Panel92.BackColor = Color.White
+        Panel92.BackColor = Color.Red
         Panel92.Controls.Add(Label100)
         Panel92.Location = New Point(308, 505)
         Panel92.Name = "Panel92"
@@ -2301,6 +2543,7 @@ Partial Class Form1
         ' 
         Label100.AutoSize = True
         Label100.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label100.ForeColor = Color.Snow
         Label100.Location = New Point(18, 9)
         Label100.Name = "Label100"
         Label100.Size = New Size(39, 31)
@@ -2309,7 +2552,7 @@ Partial Class Form1
         ' 
         ' Panel93
         ' 
-        Panel93.BackColor = Color.White
+        Panel93.BackColor = Color.Orange
         Panel93.Controls.Add(Label101)
         Panel93.Location = New Point(308, 557)
         Panel93.Name = "Panel93"
@@ -2320,6 +2563,7 @@ Partial Class Form1
         ' 
         Label101.AutoSize = True
         Label101.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label101.ForeColor = Color.Snow
         Label101.Location = New Point(18, 9)
         Label101.Name = "Label101"
         Label101.Size = New Size(39, 31)
@@ -2328,7 +2572,7 @@ Partial Class Form1
         ' 
         ' Panel94
         ' 
-        Panel94.BackColor = Color.White
+        Panel94.BackColor = Color.Red
         Panel94.Controls.Add(Label102)
         Panel94.Location = New Point(382, 505)
         Panel94.Name = "Panel94"
@@ -2339,6 +2583,7 @@ Partial Class Form1
         ' 
         Label102.AutoSize = True
         Label102.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label102.ForeColor = Color.Snow
         Label102.Location = New Point(18, 9)
         Label102.Name = "Label102"
         Label102.Size = New Size(36, 31)
@@ -2347,7 +2592,7 @@ Partial Class Form1
         ' 
         ' Panel95
         ' 
-        Panel95.BackColor = Color.White
+        Panel95.BackColor = Color.Orange
         Panel95.Controls.Add(Label103)
         Panel95.Location = New Point(382, 557)
         Panel95.Name = "Panel95"
@@ -2358,6 +2603,7 @@ Partial Class Form1
         ' 
         Label103.AutoSize = True
         Label103.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label103.ForeColor = Color.Snow
         Label103.Location = New Point(18, 9)
         Label103.Name = "Label103"
         Label103.Size = New Size(40, 31)
@@ -2366,7 +2612,7 @@ Partial Class Form1
         ' 
         ' Panel96
         ' 
-        Panel96.BackColor = Color.White
+        Panel96.BackColor = Color.Red
         Panel96.Controls.Add(Label104)
         Panel96.Location = New Point(456, 505)
         Panel96.Name = "Panel96"
@@ -2377,6 +2623,7 @@ Partial Class Form1
         ' 
         Label104.AutoSize = True
         Label104.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label104.ForeColor = Color.Snow
         Label104.Location = New Point(18, 9)
         Label104.Name = "Label104"
         Label104.Size = New Size(42, 31)
@@ -2385,7 +2632,7 @@ Partial Class Form1
         ' 
         ' Panel97
         ' 
-        Panel97.BackColor = Color.White
+        Panel97.BackColor = Color.Orange
         Panel97.Controls.Add(Label105)
         Panel97.Location = New Point(456, 557)
         Panel97.Name = "Panel97"
@@ -2396,6 +2643,7 @@ Partial Class Form1
         ' 
         Label105.AutoSize = True
         Label105.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label105.ForeColor = Color.Snow
         Label105.Location = New Point(18, 9)
         Label105.Name = "Label105"
         Label105.Size = New Size(29, 31)
@@ -2404,7 +2652,7 @@ Partial Class Form1
         ' 
         ' Panel98
         ' 
-        Panel98.BackColor = Color.White
+        Panel98.BackColor = Color.Red
         Panel98.Controls.Add(Label106)
         Panel98.Location = New Point(530, 505)
         Panel98.Name = "Panel98"
@@ -2415,6 +2663,7 @@ Partial Class Form1
         ' 
         Label106.AutoSize = True
         Label106.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label106.ForeColor = Color.Snow
         Label106.Location = New Point(18, 9)
         Label106.Name = "Label106"
         Label106.Size = New Size(46, 31)
@@ -2423,7 +2672,7 @@ Partial Class Form1
         ' 
         ' Panel99
         ' 
-        Panel99.BackColor = Color.White
+        Panel99.BackColor = Color.Orange
         Panel99.Controls.Add(Label107)
         Panel99.Location = New Point(530, 557)
         Panel99.Name = "Panel99"
@@ -2434,15 +2683,16 @@ Partial Class Form1
         ' 
         Label107.AutoSize = True
         Label107.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label107.ForeColor = Color.Snow
         Label107.Location = New Point(18, 9)
         Label107.Name = "Label107"
-        Label107.Size = New Size(39, 31)
+        Label107.Size = New Size(42, 31)
         Label107.TabIndex = 0
-        Label107.Text = "Pu"
+        Label107.Text = "Np"
         ' 
         ' Panel100
         ' 
-        Panel100.BackColor = Color.White
+        Panel100.BackColor = Color.Red
         Panel100.Controls.Add(Label108)
         Panel100.Location = New Point(604, 505)
         Panel100.Name = "Panel100"
@@ -2453,15 +2703,16 @@ Partial Class Form1
         ' 
         Label108.AutoSize = True
         Label108.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label108.ForeColor = Color.Snow
         Label108.Location = New Point(18, 9)
         Label108.Name = "Label108"
-        Label108.Size = New Size(38, 31)
+        Label108.Size = New Size(46, 31)
         Label108.TabIndex = 0
-        Label108.Text = "Eu"
+        Label108.Text = "Sm"
         ' 
         ' Panel101
         ' 
-        Panel101.BackColor = Color.White
+        Panel101.BackColor = Color.Orange
         Panel101.Controls.Add(Label109)
         Panel101.Location = New Point(604, 557)
         Panel101.Name = "Panel101"
@@ -2472,17 +2723,18 @@ Partial Class Form1
         ' 
         Label109.AutoSize = True
         Label109.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label109.ForeColor = Color.Snow
         Label109.Location = New Point(18, 9)
         Label109.Name = "Label109"
-        Label109.Size = New Size(46, 31)
+        Label109.Size = New Size(39, 31)
         Label109.TabIndex = 0
-        Label109.Text = "Am"
+        Label109.Text = "Pu"
         ' 
         ' Panel102
         ' 
-        Panel102.BackColor = Color.White
+        Panel102.BackColor = Color.Red
         Panel102.Controls.Add(Label110)
-        Panel102.Location = New Point(678, 505)
+        Panel102.Location = New Point(752, 505)
         Panel102.Name = "Panel102"
         Panel102.Size = New Size(68, 46)
         Panel102.TabIndex = 104
@@ -2491,6 +2743,7 @@ Partial Class Form1
         ' 
         Label110.AutoSize = True
         Label110.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label110.ForeColor = Color.Snow
         Label110.Location = New Point(18, 9)
         Label110.Name = "Label110"
         Label110.Size = New Size(42, 31)
@@ -2499,9 +2752,9 @@ Partial Class Form1
         ' 
         ' Panel103
         ' 
-        Panel103.BackColor = Color.White
+        Panel103.BackColor = Color.Orange
         Panel103.Controls.Add(Label111)
-        Panel103.Location = New Point(678, 557)
+        Panel103.Location = New Point(752, 557)
         Panel103.Name = "Panel103"
         Panel103.Size = New Size(68, 46)
         Panel103.TabIndex = 105
@@ -2510,6 +2763,7 @@ Partial Class Form1
         ' 
         Label111.AutoSize = True
         Label111.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label111.ForeColor = Color.Snow
         Label111.Location = New Point(18, 9)
         Label111.Name = "Label111"
         Label111.Size = New Size(46, 31)
@@ -2518,9 +2772,9 @@ Partial Class Form1
         ' 
         ' Panel104
         ' 
-        Panel104.BackColor = Color.White
+        Panel104.BackColor = Color.Red
         Panel104.Controls.Add(Label112)
-        Panel104.Location = New Point(752, 505)
+        Panel104.Location = New Point(826, 505)
         Panel104.Name = "Panel104"
         Panel104.Size = New Size(68, 46)
         Panel104.TabIndex = 106
@@ -2529,6 +2783,7 @@ Partial Class Form1
         ' 
         Label112.AutoSize = True
         Label112.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label112.ForeColor = Color.Snow
         Label112.Location = New Point(18, 9)
         Label112.Name = "Label112"
         Label112.Size = New Size(40, 31)
@@ -2537,9 +2792,9 @@ Partial Class Form1
         ' 
         ' Panel105
         ' 
-        Panel105.BackColor = Color.White
+        Panel105.BackColor = Color.Orange
         Panel105.Controls.Add(Label113)
-        Panel105.Location = New Point(752, 557)
+        Panel105.Location = New Point(826, 557)
         Panel105.Name = "Panel105"
         Panel105.Size = New Size(68, 46)
         Panel105.TabIndex = 107
@@ -2548,6 +2803,7 @@ Partial Class Form1
         ' 
         Label113.AutoSize = True
         Label113.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label113.ForeColor = Color.Snow
         Label113.Location = New Point(18, 9)
         Label113.Name = "Label113"
         Label113.Size = New Size(40, 31)
@@ -2556,9 +2812,9 @@ Partial Class Form1
         ' 
         ' Panel106
         ' 
-        Panel106.BackColor = Color.White
+        Panel106.BackColor = Color.Red
         Panel106.Controls.Add(Label114)
-        Panel106.Location = New Point(826, 505)
+        Panel106.Location = New Point(900, 505)
         Panel106.Name = "Panel106"
         Panel106.Size = New Size(68, 46)
         Panel106.TabIndex = 108
@@ -2567,6 +2823,7 @@ Partial Class Form1
         ' 
         Label114.AutoSize = True
         Label114.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label114.ForeColor = Color.Snow
         Label114.Location = New Point(18, 9)
         Label114.Name = "Label114"
         Label114.Size = New Size(41, 31)
@@ -2575,9 +2832,9 @@ Partial Class Form1
         ' 
         ' Panel107
         ' 
-        Panel107.BackColor = Color.White
+        Panel107.BackColor = Color.Orange
         Panel107.Controls.Add(Label115)
-        Panel107.Location = New Point(826, 557)
+        Panel107.Location = New Point(900, 557)
         Panel107.Name = "Panel107"
         Panel107.Size = New Size(68, 46)
         Panel107.TabIndex = 109
@@ -2586,6 +2843,7 @@ Partial Class Form1
         ' 
         Label115.AutoSize = True
         Label115.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label115.ForeColor = Color.Snow
         Label115.Location = New Point(18, 9)
         Label115.Name = "Label115"
         Label115.Size = New Size(36, 31)
@@ -2594,9 +2852,9 @@ Partial Class Form1
         ' 
         ' Panel108
         ' 
-        Panel108.BackColor = Color.White
+        Panel108.BackColor = Color.Red
         Panel108.Controls.Add(Label116)
-        Panel108.Location = New Point(900, 505)
+        Panel108.Location = New Point(974, 505)
         Panel108.Name = "Panel108"
         Panel108.Size = New Size(68, 46)
         Panel108.TabIndex = 110
@@ -2605,6 +2863,7 @@ Partial Class Form1
         ' 
         Label116.AutoSize = True
         Label116.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label116.ForeColor = Color.Snow
         Label116.Location = New Point(18, 9)
         Label116.Name = "Label116"
         Label116.Size = New Size(42, 31)
@@ -2613,9 +2872,9 @@ Partial Class Form1
         ' 
         ' Panel109
         ' 
-        Panel109.BackColor = Color.White
+        Panel109.BackColor = Color.Orange
         Panel109.Controls.Add(Label117)
-        Panel109.Location = New Point(900, 557)
+        Panel109.Location = New Point(974, 557)
         Panel109.Name = "Panel109"
         Panel109.Size = New Size(68, 46)
         Panel109.TabIndex = 111
@@ -2624,6 +2883,7 @@ Partial Class Form1
         ' 
         Label117.AutoSize = True
         Label117.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label117.ForeColor = Color.Snow
         Label117.Location = New Point(18, 9)
         Label117.Name = "Label117"
         Label117.Size = New Size(36, 31)
@@ -2632,9 +2892,9 @@ Partial Class Form1
         ' 
         ' Panel110
         ' 
-        Panel110.BackColor = Color.White
+        Panel110.BackColor = Color.Red
         Panel110.Controls.Add(Label118)
-        Panel110.Location = New Point(974, 505)
+        Panel110.Location = New Point(1048, 505)
         Panel110.Name = "Panel110"
         Panel110.Size = New Size(68, 46)
         Panel110.TabIndex = 112
@@ -2643,6 +2903,7 @@ Partial Class Form1
         ' 
         Label118.AutoSize = True
         Label118.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label118.ForeColor = Color.Snow
         Label118.Location = New Point(18, 9)
         Label118.Name = "Label118"
         Label118.Size = New Size(35, 31)
@@ -2651,9 +2912,9 @@ Partial Class Form1
         ' 
         ' Panel111
         ' 
-        Panel111.BackColor = Color.White
+        Panel111.BackColor = Color.Orange
         Panel111.Controls.Add(Label119)
-        Panel111.Location = New Point(974, 557)
+        Panel111.Location = New Point(1048, 557)
         Panel111.Name = "Panel111"
         Panel111.Size = New Size(68, 46)
         Panel111.TabIndex = 113
@@ -2662,6 +2923,7 @@ Partial Class Form1
         ' 
         Label119.AutoSize = True
         Label119.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label119.ForeColor = Color.Snow
         Label119.Location = New Point(18, 9)
         Label119.Name = "Label119"
         Label119.Size = New Size(45, 31)
@@ -2670,9 +2932,9 @@ Partial Class Form1
         ' 
         ' Panel112
         ' 
-        Panel112.BackColor = Color.White
+        Panel112.BackColor = Color.Red
         Panel112.Controls.Add(Label120)
-        Panel112.Location = New Point(1049, 505)
+        Panel112.Location = New Point(1123, 505)
         Panel112.Name = "Panel112"
         Panel112.Size = New Size(68, 46)
         Panel112.TabIndex = 114
@@ -2681,6 +2943,7 @@ Partial Class Form1
         ' 
         Label120.AutoSize = True
         Label120.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label120.ForeColor = Color.Snow
         Label120.Location = New Point(18, 9)
         Label120.Name = "Label120"
         Label120.Size = New Size(45, 31)
@@ -2689,9 +2952,9 @@ Partial Class Form1
         ' 
         ' Panel113
         ' 
-        Panel113.BackColor = Color.White
+        Panel113.BackColor = Color.Orange
         Panel113.Controls.Add(Label121)
-        Panel113.Location = New Point(1049, 557)
+        Panel113.Location = New Point(1123, 557)
         Panel113.Name = "Panel113"
         Panel113.Size = New Size(68, 46)
         Panel113.TabIndex = 115
@@ -2700,6 +2963,7 @@ Partial Class Form1
         ' 
         Label121.AutoSize = True
         Label121.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label121.ForeColor = Color.Snow
         Label121.Location = New Point(18, 9)
         Label121.Name = "Label121"
         Label121.Size = New Size(44, 31)
@@ -2708,9 +2972,9 @@ Partial Class Form1
         ' 
         ' Panel114
         ' 
-        Panel114.BackColor = Color.White
+        Panel114.BackColor = Color.Red
         Panel114.Controls.Add(Label122)
-        Panel114.Location = New Point(1123, 505)
+        Panel114.Location = New Point(1197, 505)
         Panel114.Name = "Panel114"
         Panel114.Size = New Size(68, 46)
         Panel114.TabIndex = 116
@@ -2719,6 +2983,7 @@ Partial Class Form1
         ' 
         Label122.AutoSize = True
         Label122.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label122.ForeColor = Color.Snow
         Label122.Location = New Point(18, 9)
         Label122.Name = "Label122"
         Label122.Size = New Size(40, 31)
@@ -2727,9 +2992,9 @@ Partial Class Form1
         ' 
         ' Panel115
         ' 
-        Panel115.BackColor = Color.White
+        Panel115.BackColor = Color.Orange
         Panel115.Controls.Add(Label123)
-        Panel115.Location = New Point(1123, 557)
+        Panel115.Location = New Point(1197, 557)
         Panel115.Name = "Panel115"
         Panel115.Size = New Size(68, 46)
         Panel115.TabIndex = 117
@@ -2738,6 +3003,7 @@ Partial Class Form1
         ' 
         Label123.AutoSize = True
         Label123.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label123.ForeColor = Color.Snow
         Label123.Location = New Point(18, 9)
         Label123.Name = "Label123"
         Label123.Size = New Size(42, 31)
@@ -2746,9 +3012,9 @@ Partial Class Form1
         ' 
         ' Panel116
         ' 
-        Panel116.BackColor = Color.White
+        Panel116.BackColor = Color.Red
         Panel116.Controls.Add(Label124)
-        Panel116.Location = New Point(1197, 505)
+        Panel116.Location = New Point(1271, 505)
         Panel116.Name = "Panel116"
         Panel116.Size = New Size(68, 46)
         Panel116.TabIndex = 118
@@ -2757,6 +3023,7 @@ Partial Class Form1
         ' 
         Label124.AutoSize = True
         Label124.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label124.ForeColor = Color.Snow
         Label124.Location = New Point(18, 9)
         Label124.Name = "Label124"
         Label124.Size = New Size(38, 31)
@@ -2765,9 +3032,9 @@ Partial Class Form1
         ' 
         ' Panel117
         ' 
-        Panel117.BackColor = Color.White
+        Panel117.BackColor = Color.Orange
         Panel117.Controls.Add(Label125)
-        Panel117.Location = New Point(1197, 557)
+        Panel117.Location = New Point(1271, 557)
         Panel117.Name = "Panel117"
         Panel117.Size = New Size(68, 46)
         Panel117.TabIndex = 119
@@ -2776,18 +3043,145 @@ Partial Class Form1
         ' 
         Label125.AutoSize = True
         Label125.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label125.ForeColor = Color.Snow
         Label125.Location = New Point(18, 9)
         Label125.Name = "Label125"
         Label125.Size = New Size(35, 31)
         Label125.TabIndex = 0
         Label125.Text = "Lr"
         ' 
+        ' Panel119
+        ' 
+        Panel119.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
+        Panel119.Controls.Add(Label131)
+        Panel119.Location = New Point(530, 259)
+        Panel119.Name = "Panel119"
+        Panel119.Size = New Size(68, 46)
+        Panel119.TabIndex = 120
+        ' 
+        ' Label131
+        ' 
+        Label131.AutoSize = True
+        Label131.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label131.ForeColor = Color.Snow
+        Label131.Location = New Point(18, 9)
+        Label131.Name = "Label131"
+        Label131.Size = New Size(38, 31)
+        Label131.TabIndex = 0
+        Label131.Text = "Fe"
+        ' 
+        ' Panel120
+        ' 
+        Panel120.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
+        Panel120.Controls.Add(Label132)
+        Panel120.Location = New Point(530, 311)
+        Panel120.Name = "Panel120"
+        Panel120.Size = New Size(68, 46)
+        Panel120.TabIndex = 121
+        ' 
+        ' Label132
+        ' 
+        Label132.AutoSize = True
+        Label132.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label132.ForeColor = Color.Snow
+        Label132.Location = New Point(18, 9)
+        Label132.Name = "Label132"
+        Label132.Size = New Size(40, 31)
+        Label132.TabIndex = 0
+        Label132.Text = "Ru"
+        ' 
+        ' Panel121
+        ' 
+        Panel121.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
+        Panel121.Controls.Add(Label133)
+        Panel121.Location = New Point(530, 363)
+        Panel121.Name = "Panel121"
+        Panel121.Size = New Size(68, 46)
+        Panel121.TabIndex = 122
+        ' 
+        ' Label133
+        ' 
+        Label133.AutoSize = True
+        Label133.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label133.ForeColor = Color.Snow
+        Label133.Location = New Point(18, 9)
+        Label133.Name = "Label133"
+        Label133.Size = New Size(40, 31)
+        Label133.TabIndex = 0
+        Label133.Text = "Os"
+        ' 
+        ' Panel122
+        ' 
+        Panel122.BackColor = Color.FromArgb(CByte(0), CByte(0), CByte(143))
+        Panel122.Controls.Add(Label134)
+        Panel122.Location = New Point(530, 415)
+        Panel122.Name = "Panel122"
+        Panel122.Size = New Size(68, 46)
+        Panel122.TabIndex = 123
+        ' 
+        ' Label134
+        ' 
+        Label134.AutoSize = True
+        Label134.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label134.ForeColor = Color.Snow
+        Label134.Location = New Point(18, 9)
+        Label134.Name = "Label134"
+        Label134.Size = New Size(39, 31)
+        Label134.TabIndex = 0
+        Label134.Text = "Hs"
+        ' 
+        ' Panel123
+        ' 
+        Panel123.BackColor = Color.Red
+        Panel123.Controls.Add(Label135)
+        Panel123.Location = New Point(678, 505)
+        Panel123.Name = "Panel123"
+        Panel123.Size = New Size(68, 46)
+        Panel123.TabIndex = 124
+        ' 
+        ' Label135
+        ' 
+        Label135.AutoSize = True
+        Label135.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label135.ForeColor = Color.Snow
+        Label135.Location = New Point(18, 9)
+        Label135.Name = "Label135"
+        Label135.Size = New Size(38, 31)
+        Label135.TabIndex = 0
+        Label135.Text = "Eu"
+        ' 
+        ' Panel124
+        ' 
+        Panel124.BackColor = Color.Orange
+        Panel124.Controls.Add(Label136)
+        Panel124.Location = New Point(678, 557)
+        Panel124.Name = "Panel124"
+        Panel124.Size = New Size(68, 46)
+        Panel124.TabIndex = 125
+        ' 
+        ' Label136
+        ' 
+        Label136.AutoSize = True
+        Label136.Font = New Font("Quicksand", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label136.ForeColor = Color.Snow
+        Label136.Location = New Point(18, 9)
+        Label136.Name = "Label136"
+        Label136.Size = New Size(46, 31)
+        Label136.TabIndex = 0
+        Label136.Text = "Am"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
-        ClientSize = New Size(1288, 648)
+        ClientSize = New Size(1354, 648)
+        Controls.Add(Panel124)
+        Controls.Add(Panel123)
+        Controls.Add(Panel122)
+        Controls.Add(Panel121)
+        Controls.Add(Panel120)
+        Controls.Add(Panel119)
         Controls.Add(Panel117)
         Controls.Add(Panel116)
         Controls.Add(Panel115)
@@ -2897,33 +3291,35 @@ Partial Class Form1
         Controls.Add(Panel11)
         Controls.Add(Panel10)
         Controls.Add(Panel9)
-        Controls.Add(Panel8)
-        Controls.Add(Panel7)
-        Controls.Add(Panel6)
-        Controls.Add(Panel5)
-        Controls.Add(Panel4)
-        Controls.Add(Panel3)
-        Controls.Add(Panel2)
+        Controls.Add(Pnl_Fr)
+        Controls.Add(Pnl_Cs)
+        Controls.Add(Pnl_Rb)
+        Controls.Add(Pnl_K)
+        Controls.Add(Pnl_Na)
+        Controls.Add(Pnl_Li)
+        Controls.Add(Pnl_H)
         Controls.Add(Label10)
         Controls.Add(Panel1)
         Name = "Form1"
         Text = "Tarea#1"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
-        Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
-        Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
-        Panel8.ResumeLayout(False)
-        Panel8.PerformLayout()
+        Pnl_ElementoSelect.ResumeLayout(False)
+        Pnl_ElementoSelect.PerformLayout()
+        Pnl_H.ResumeLayout(False)
+        Pnl_H.PerformLayout()
+        Pnl_Li.ResumeLayout(False)
+        Pnl_Li.PerformLayout()
+        Pnl_Na.ResumeLayout(False)
+        Pnl_Na.PerformLayout()
+        Pnl_K.ResumeLayout(False)
+        Pnl_K.PerformLayout()
+        Pnl_Rb.ResumeLayout(False)
+        Pnl_Rb.PerformLayout()
+        Pnl_Cs.ResumeLayout(False)
+        Pnl_Cs.PerformLayout()
+        Pnl_Fr.ResumeLayout(False)
+        Pnl_Fr.PerformLayout()
         Panel9.ResumeLayout(False)
         Panel9.PerformLayout()
         Panel10.ResumeLayout(False)
@@ -3142,6 +3538,18 @@ Partial Class Form1
         Panel116.PerformLayout()
         Panel117.ResumeLayout(False)
         Panel117.PerformLayout()
+        Panel119.ResumeLayout(False)
+        Panel119.PerformLayout()
+        Panel120.ResumeLayout(False)
+        Panel120.PerformLayout()
+        Panel121.ResumeLayout(False)
+        Panel121.PerformLayout()
+        Panel122.ResumeLayout(False)
+        Panel122.PerformLayout()
+        Panel123.ResumeLayout(False)
+        Panel123.PerformLayout()
+        Panel124.ResumeLayout(False)
+        Panel124.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -3164,20 +3572,20 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents M_Gases_N As Panel
     Friend WithEvents Label10 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label17 As Label
+    Friend WithEvents Pnl_H As Panel
+    Friend WithEvents Lbl_H As Label
+    Friend WithEvents Pnl_Li As Panel
+    Friend WithEvents Lbl_Li As Label
+    Friend WithEvents Pnl_Na As Panel
+    Friend WithEvents Lbl_Na As Label
+    Friend WithEvents Pnl_K As Panel
+    Friend WithEvents Lbl_K As Label
+    Friend WithEvents Pnl_Rb As Panel
+    Friend WithEvents Lbl_Rb As Label
+    Friend WithEvents Pnl_Cs As Panel
+    Friend WithEvents Lbl_Cs As Label
+    Friend WithEvents Pnl_Fr As Panel
+    Friend WithEvents Lbl_Fr As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label18 As Label
     Friend WithEvents Panel10 As Panel
@@ -3396,4 +3804,30 @@ Partial Class Form1
     Friend WithEvents Label124 As Label
     Friend WithEvents Panel117 As Panel
     Friend WithEvents Label125 As Label
+    Friend WithEvents Label128 As Label
+    Friend WithEvents Label127 As Label
+    Friend WithEvents Pnl_ElementoSelect As Panel
+    Friend WithEvents Lbl_ElementoSelect As Label
+    Friend WithEvents Txt_E_Oxidacion As TextBox
+    Friend WithEvents Txt_M_Atomica As TextBox
+    Friend WithEvents Txt_N_Atomico As TextBox
+    Friend WithEvents Txt_Nombre As TextBox
+    Friend WithEvents Label130 As Label
+    Friend WithEvents Label129 As Label
+    Friend WithEvents Panel119 As Panel
+    Friend WithEvents Label131 As Label
+    Friend WithEvents Panel120 As Panel
+    Friend WithEvents Label132 As Label
+    Friend WithEvents Panel121 As Panel
+    Friend WithEvents Label133 As Label
+    Friend WithEvents Panel122 As Panel
+    Friend WithEvents Label134 As Label
+    Friend WithEvents Panel123 As Panel
+    Friend WithEvents Label135 As Label
+    Friend WithEvents Panel124 As Panel
+    Friend WithEvents Label136 As Label
+    Friend WithEvents Panel125 As Panel
+    Friend WithEvents Label138 As Label
+    Friend WithEvents Panel126 As Panel
+    Friend WithEvents Label137 As Label
 End Class
